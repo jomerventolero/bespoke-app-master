@@ -10,6 +10,7 @@ import OurServices from './components/OurServices'
 import AboutUs from './components/AboutUs'
 import ContactForm from './components/ContactForm'
 import Resources from './components/Resources'
+import WhyChooseBespoke from './components/WhyChooseBespoke'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <AboutUs />
         <ContactForm />
         <Resources />
+        <WhyChooseBespoke />
       </div>
       <WhatsAppFloatingButton />
       <Footer />

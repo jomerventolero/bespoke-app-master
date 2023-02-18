@@ -6,14 +6,14 @@ import lineseperator from '../assets/Icons/lineseperator.png'
 import customer from '../assets/Icons/customersupport.png'
 import dataentry from '../assets/Icons/dataentry.png'
 import mainherosection from '../assets/mainherosection.png'
-
+import styles from '../style'
 
 const Hero = () => (
   <section id="home" className={`md:flex-row flex-col w-full`}>
       <div className="w-full h-full overflow-hidden bg-gradient-to-r from-indigo-500 via-blue-300 to-blue-500 text-white font-bold pl-5">
         <div className={`flex flex-row justify-between items-center`}>
           <div className='pl-12'>
-            <h1 className="flex-1 font-poppins font-semibold ss:text-[70px] text-[12px] pb-6 text-white ss:leading-[100px] leading-[75px]">
+            <h1 className={`flex-1 font-poppins font-semibold ${styles.textResH1} pb-6 text-white ss:leading-[100px] leading-[75px]`}>
               WE TAKE THE {" "}<br className="sm:block hidden"/>
               <span className="text-yellow-400">COMPLICATED</span> {" "} OUT OF <br />
               YOUR OUTSOURCING NEEDS!

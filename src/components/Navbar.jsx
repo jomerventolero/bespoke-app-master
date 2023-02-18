@@ -2,6 +2,7 @@ import React from 'react'
 import logo from '../assets/logo.png'
 import { navLinks } from '../constants'
 import ContactUs from '../components/ContactUs'
+import styles from '../style'
 
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
                     key={nav.id}
                     className={`font-poppins font-bold cursor-pointer justify-between place-items-start text-[20px]  text-black ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
                 >
-                    <a href={`#${nav.id}`} className="hover:text-brandBlue xl:text-[20px] lg:text-[12px] md:text-[10px] sm:text-[8px] ss:text-[6px] xs:text-[8px]">
+                    <a href={`#${nav.id}`} className={`hover:text-brandBlue ${styles.textRes} `}>
                         {nav.title}
                     </a>
                 </li>

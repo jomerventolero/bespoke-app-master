@@ -54,7 +54,7 @@ const Footer = () =>  {
                 </h2>
                 
                 <ul>
-                    {quickLinks.map((links, index) =>
+                    {quickLinks.map((links) =>
                     <li 
                         key={links.id}
                         className={`pl-4 font-poppins font-semibold cursor-pointer m-1`}
@@ -71,7 +71,7 @@ const Footer = () =>  {
                     SITE TOOLS
                 </h2>
                 <ul>
-                    {siteTools.map((tools, indexT) =>
+                    {siteTools.map((tools) =>
                     <li
                         key={tools.id}
                         className={`pl-4 font-poppins font-semibold cursor-pointer m-1`}

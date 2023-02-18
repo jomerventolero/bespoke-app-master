@@ -33,7 +33,7 @@ const ContactForm = () => {
                 <img src={ linkedin_logo } alt="fblogo" className="w-[10%] aspect-square"/>
             </div>
         </div>
-        <form className="flex flex-col px-4">
+        <form className="flex flex-col px-8">
             <div className='flex flex-col'>
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
                 <span>Talk to us.</span>
@@ -52,7 +52,7 @@ const ContactForm = () => {
 
                 />
                 <div className="flex flex-row pt-4">
-                    <UnStyledButton buttonStyle="bg-brandBlue text-white text-[75%] px-[4rem] py-[1rem] rounded-[20px] font-poppins font-semibold" text="Submit" onClick={submitForm}/>
+                    <UnStyledButton buttonStyle="bg-brandBlue text-white shadow-xl text-[75%] px-[4rem] py-[1rem] rounded-[20px] font-poppins font-semibold" text="Submit" onClick={submitForm}/>
                 </div>
             </div>
         </form>
