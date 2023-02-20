@@ -18,7 +18,10 @@ const styles = {
     textRes: "xl:text-[20px] lg:text-[12px] md:text-[10px] sm:text-[8px] ss:text-[6px] xs:text-[4px]",
     textResCard: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
     textResHeadings: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
-    textResNavLinks: "xl:text-[20px] lg:text-[18x] md:text-[13px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
+    textResNavLinks: "xl:text-[20px] lg:text-[18x] md:text-[13px] sm:text-[12px] ss:text-[10px] xs:text-[8px]",
+    textResContactForm: "xl:text-[35px] lg:text-[22x] md:text-[15px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
+
+    navbarRes: "sm:hidden ss:hidden xs:hidden"
   };
   
   export const layout = {
