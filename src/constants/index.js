@@ -37,7 +37,7 @@ export const quickLinks = [
     title: "About Us",
   },
   {
-    id: "services",
+    id: "ourservices",
     title: "Services",
   },
   {
