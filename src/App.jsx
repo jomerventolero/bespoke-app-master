@@ -17,7 +17,7 @@ function App() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          duration: 0.8,
+          duration: 5.8,
           delay: 0.2,
           ease: [0, 0.71, 0.2, 1.01]
         }}  

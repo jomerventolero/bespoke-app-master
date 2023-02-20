@@ -1,12 +1,21 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { motion } from 'framer-motion'
 
 const JobsPage = () => {
   return (
     <div className="flex flex-col gap-4">
         <Navbar />
-     <div className="flex flex-col justify-center font-poppins font-bold text-[50px] text-brandBlue text-center py-[15%]">Stay Tuned!!</div>
+     <motion.div className="flex flex-col justify-center font-poppins font-bold text-[80px] text-brandBlue text-center py-[15%]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ 
+            duration: 2.5,
+            delay: 0.5
+        }}
+     >Coming Soon...
+     </motion.div>
         <Footer />
     </div>
   )
