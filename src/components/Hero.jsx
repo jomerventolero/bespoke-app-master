@@ -10,7 +10,7 @@ import styles from '../style'
 
 const Hero = () => (
   <section id="home" className={`md:flex-row flex-col w-full`}>
-      <div className="w-full h-full overflow-hidden bg-gradient-to-r from-indigo-500 via-blue-300 to-blue-500 text-white font-bold pl-5">
+      <div className="w-full h-full overflow-hidden bg-gradient-to-t from-indigo-300 via-brandBlue to-blue-300 text-white font-bold pl-5">
         <div className={`flex flex-row justify-between items-center`}>
           <div className='pl-12'>
             <h1 className={`flex-1 font-poppins font-semibold ${styles.textResH1} pb-6 text-white ss:leading-[100px] leading-[75px]`}>
@@ -20,7 +20,7 @@ const Hero = () => (
             </h1>
             <Button props="Read More"/>
           </div>
-          <img src={ mainherosection } alt="main" className='relative w-[58%] h-full'/>
+          <img src={ mainherosection } alt="main" className='w-[65%] h-full'/>
         </div>
       </div>
       <div className='pr-[50px] pl-[50px]'>
