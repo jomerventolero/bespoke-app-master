@@ -17,7 +17,8 @@ const styles = {
     textResH1: "xl:text-[75px] lg:text-[65px] md:text-[40px] sm:text-[36px] ss:text-[22px] xs:text-[18px]",
     textRes: "xl:text-[20px] lg:text-[12px] md:text-[10px] sm:text-[8px] ss:text-[6px] xs:text-[4px]",
     textResCard: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
-    textResHeadings: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]"
+    textResHeadings: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
+    textResNavLinks: "xl:text-[26px] lg:text-[18x] md:text-[13px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
   };
   
   export const layout = {

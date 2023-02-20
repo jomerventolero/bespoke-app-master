@@ -17,7 +17,7 @@ const Footer = () =>  {
     return(
         <div className={`p-1 w-full flex flex-row gap-[100px]`}>
             <div className={`px-6`}>
-                <a href='/home'>
+                <a href='/'>
                     <img src={ logo } alt="logo" className='w-[145px] h-[145px] cursor-pointer'/>
                 </a>
                 <div className={`p-8 flex flex-row w-full gap-5`}>

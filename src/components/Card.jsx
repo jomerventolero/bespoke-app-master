@@ -1,11 +1,11 @@
 import styles from '../style'
 import { motion } from 'framer-motion'
 
-const Card = ({ image1, text}) => {
+const Card = ({ image1, text }) => {
   
   return (
     <motion.div 
-    className={`p-5 rounded-[50px] w-[300px] 
+    className={`p-2 rounded-[50px] w-[300px] 
                h-[50%] flex flex-col justify-start`} 
     initial={{ opacity: 0, scale: 0.5 }}
     animate={{ opacity: 1, scale: 1 }}

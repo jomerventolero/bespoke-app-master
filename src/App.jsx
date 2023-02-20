@@ -23,11 +23,6 @@ function App() {
         <Hero />
       </div>
       <div>
-        <OurServices />
-        <HowitWorks />
-        <Testimonials />
-        <AboutUs />
-        <ContactForm />
         <Resources />
         <WhyChooseBespoke />
       </div>
