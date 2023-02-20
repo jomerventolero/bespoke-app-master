@@ -5,6 +5,8 @@ import fb_logo from '../assets/fb_logo.png'
 import linkedin_logo from '../assets/linkedin_logo.png'
 import UnStyledButton from './UnStyledButton'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { motion } from 'framer-motion'
+import styles from '../style'
 
 const ContactForm = () => {
   const submitForm = (value) => {
@@ -13,8 +15,16 @@ const ContactForm = () => {
   return (
     <section id="contactus">
     <div className="flex flex-row justify-center pt-[5%] pb-[30px]">
-        <div className="flex flex-col bg-slate-900 shadow-2xl rounded-[15px] pt-[3%] h-auto w-[25%] pl-8 pr-8 py-6 object-contain">
-            <h1 className="text-white font-poppins font-semibold xl:text-xl lg:text-lg md:text-md">CONTACT <br/>INFORMATION</h1>
+        <motion.div className="flex flex-col bg-slate-900 shadow-2xl rounded-[15px] pt-[3%] h-auto w-[25%] pl-8 pr-8 py-6 object-contain"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ 
+                duration: 0.9,
+                delay: 0.5
+        }}
+        >
+    
+            <h1 className={`text-white font-poppins font-semibold ${styles.textResContactForm}`}>CONTACT <br/>INFORMATION</h1>
             <span className="text-white">You can reach us at:</span>
             <div className="flex flex-row justify-star pt-8">
                 <img src={phone} alt="phone" className="w-[15%] h-[120%]" />
@@ -32,7 +42,15 @@ const ContactForm = () => {
                 <img src={ fb_logo } alt="fblogo" className="w-[10%] "/>
                 <img src={ linkedin_logo } alt="fblogo" className="w-[10%] aspect-square"/>
             </div>
-        </div>
+        </motion.div>
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5
+            }}
+        >
         <form className="flex flex-col px-8">
             <div className='flex flex-col'>
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
@@ -56,6 +74,7 @@ const ContactForm = () => {
                 </div>
             </div>
         </form>
+        </motion.div>
     </div>
     </section>
   )
