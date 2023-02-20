@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-white top-0 flex shadow-xl py-1 px-6 justify-start items-center navbar">
         <a href='/'>
-            <img src={ logo } alt="logo" className="w-[145px] h-[145px] md:w-[64px] md:h-[64px] lg:w-[128px] lg:h-[128px] cursor-pointer"/>
+            <img src={ logo } alt="logo" className="h-[145px] md:w-[64px] md:h-[64px] lg:w-[128px] lg:h-[128px] cursor-pointer"/>
         </a>
         <h6 className="hidden lg:block pb-20 relative left-[-1.5%] lg:text-[15px] font-semibold font-poppins md:text-12px]">Bespoke Enterprise Solutions Inc.</h6>
         <ul className="list-none xs:hidden md:flex justify-start items-center flex-1 pt-12 pb-4 h-[10%]">
