@@ -21,9 +21,9 @@ const Hero = () => {
               YOUR OUTSOURCING NEEDS!
             </h1>
             <Button props="Read More"/>
-            <UnStyledButton buttonStyle="lg:hidden rounded-full p-4 bg-brandBlack" text="Contact Us!"/>
+            <UnStyledButton buttonStyle="lg:hidden shadow-lg rounded-full p-4 bg-brandBlack" text="Contact Us!"/>
           </div>
-          <img src={ mainherosection } alt="main" className='w-[65%] h-full md:block hidden'/>
+          <img src={ mainherosection } alt="main" className='w-[68%] h-full md:block hidden'/>
         </div>
       </div>
       <div className='pr-[50px] pl-[50px] md:block hidden'>
