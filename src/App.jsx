@@ -5,6 +5,7 @@ import styles from './style'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
 import { motion } from 'framer-motion'
+import Testimonials from './components/Testimonials'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
         <Hero />
       </motion.div>
       <div>
+        <Testimonials />
         <Footer />
       </div>
       <WhatsAppFloatingButton />
