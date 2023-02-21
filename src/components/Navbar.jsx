@@ -22,7 +22,7 @@ const Navbar = () => {
                     key={nav.id}
                     className={`font-poppins font-bold cursor-pointer justify-between place-items-start text-[20px]  text-black ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
                 >
-                    <a href={`/${nav.id}`} className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                    <a href={`${nav.id}`} className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
                         {nav.title}
                     </a>
                 </li>
@@ -42,7 +42,7 @@ const Navbar = () => {
                   className={`font-poppins font-normal cursor-pointer text-[16px] text-brandBlack ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'}`}
 
                 >
-                  <a href={`/${nav.id}`}>
+                  <a href={`${nav.id}`}>
                     {nav.title}
                   </a>
                 </li>
