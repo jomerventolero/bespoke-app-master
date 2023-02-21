@@ -8,12 +8,21 @@ import leverage0 from '../assets/Icons/leverage0.png'
 import talent0 from '../assets/Icons/talent0.png'
 import talent1 from '../assets/Icons/talent1.png'
 import Card from './Card'
+import { motion } from 'framer-motion'
 
 
 const AboutUs = () => {
   return (
     <section id="testimonials">
-        <div className="w-full h-full flex flex-row bg-gradient-to-b from-indigo-300 to-cyan-200 justify-evenly">
+        <motion.div className="w-full h-full flex flex-row bg-gradient-to-b from-indigo-300 to-cyan-200 justify-evenly"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ 
+                duration: 5.5,
+                delay: 0.2,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}
+        >
             <div className="flex flex-col pt-12 pl-5 max-w-[900px] w-900px pb-5">
                 <span className="w-[3/4] h-full text-[25px] pb-4">
                     With the constant advancements in technology, you can be sure the data we <br/>process for you is secured in our in-house dedicated server under lock and key <br/>with 24 hours surveillance monitoring.
@@ -26,8 +35,16 @@ const AboutUs = () => {
             <div className='items-center flex justify-center'>
                 <img src={securityicon} alt="securityicon" className='w-[360px] h-[380px] items-center'/>
             </div>
-        </div>
-        <div className="flex flex-col justify-center items-center px-10 py-2">
+        </motion.div>
+        <motion.div className="flex flex-col justify-center items-center px-10 py-2"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ 
+                duration: 5.5,
+                delay: 0.2,
+                ease: [0, 0.71, 0.2, 1.01]
+            }}
+        >
             <h1 className="font-poppins font-bold text-brandBlue text-[35px]">
                 HOW YOUR BESPOKE STAFF CAN HELP WITH YOUR BUSINESS
             </h1>
@@ -38,7 +55,7 @@ const AboutUs = () => {
                 <Card  image1={ leverage0 } text="Leverage your productivity to focus on what you need to the most"/>
                 <Card image0={ talent1 } image1={ talent0 } text="Widen Talent search"/>
             </div>
-        </div>
+        </motion.div>
     </section>
   )
 }
