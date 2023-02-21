@@ -9,12 +9,16 @@ import talent0 from '../assets/Icons/talent0.png'
 import talent1 from '../assets/Icons/talent1.png'
 import Card from './Card'
 import { motion } from 'framer-motion'
-
+import { useState } from 'react'
 
 const AboutUs = () => {
+
+  const [isFocused, setIsFocused] = useState(false);
+
   return (
     <section id="testimonials">
         <motion.div className="w-full h-full flex flex-row bg-gradient-to-b from-indigo-300 to-cyan-200 justify-evenly"
+            isFocused={() => setIsFocused(true)}  
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ 
