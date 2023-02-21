@@ -8,7 +8,7 @@ const Button = ({props, redirect}) => {
             <motion.button
                 whileHover={{ scale : 1.1 }} 
                 whileTap = {{ scale : 0.9 }}
-                className={`bg-brandBlack text-white hover:bg-brandBlue rounded-full min-h-[68px] px-10`}>
+                className={`bg-brandBlack text-white hover:bg-brandBlue rounded-full min-h-[68px] px-10 shadow-lg`}>
                 {props}
             </motion.button>
         </a>
