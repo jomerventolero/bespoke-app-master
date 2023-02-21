@@ -16,9 +16,9 @@ const Footer = () =>  {
     }
     return(
         <div className={`p-1 w-full flex flex-row gap-[100px]`}>
-            <div className={`px-6`}>
+            <div className={`px-6 sm:px-0 md:block hidden`}>
                 <a href='/'>
-                    <img src={ logo } alt="logo" className='w-[145px] h-[145px] cursor-pointer'/>
+                    <img src={ logo } alt="logo" className='aspect-square w-[145px] h-[145px] cursor-pointer'/>
                 </a>
                 <div className={`p-8 flex flex-row w-full gap-5`}>
                     <div>
@@ -33,7 +33,7 @@ const Footer = () =>  {
                     </div>
                 </div>
             </div>
-            <div>
+            <div className="px-4">
                 <h2 className="text-brandBlue font-poppins font-semibold text-[25px] ">
                     CONTACT US
                 </h2>
