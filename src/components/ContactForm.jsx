@@ -13,6 +13,7 @@ const ContactForm = () => {
 
   const form = useRef();
   const [isVerified, setIsVerified] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
 
   const handleVerify = () => {
     setIsVerified(true)
@@ -21,8 +22,8 @@ const ContactForm = () => {
   
   const sendEmail = (e) => {
     e.preventDefault();
-
-    emailjs.sendForm('service_ileepgo', 'bespoke-email-template',form.current, '4t8EhVp1pW3EIe4Zr')
+    setIsSubmitted(true)
+    emailjs.sendForm('service_ileepgo', 'bespoke-email-template', form.current, '4t8EhVp1pW3EIe4Zr')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -32,7 +33,26 @@ const ContactForm = () => {
 
   return (
     <section id="contactus">
-    <div className="flex flex-row justify-center pt-[5%] pb-[30px]">
+    <motion.div className={`${!isSubmitted ? "hidden" : "flex text-[50px] text-brandBlue font-bold justify-center"}`}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ 
+            duration: 4.5,
+            delay: 0.2,
+        }}
+  
+    >
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        Thank you for inquiring to us!
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </motion.div>
+    <div className={`${ isSubmitted ? "hidden" : "flex flex-row justify-center pt-[5%] pb-[30px]"}`}>
         <motion.div className="flex flex-col bg-slate-900 shadow-2xl rounded-[15px] pt-[3%] h-auto w-[25%] pl-8 pr-8 py-6 object-contain"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -69,7 +89,7 @@ const ContactForm = () => {
                 delay: 0.5
             }}
         >
-        <form ref={ form } className="flex flex-col px-8" onSubmit={ sendEmail }>
+        <form ref={ form } className={`flex flex-col px-8 }`} onSubmit={ sendEmail }>
             <div className='flex flex-col'>
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
                 <span>Talk to us.</span>
