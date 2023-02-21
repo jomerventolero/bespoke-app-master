@@ -10,16 +10,17 @@ import { motion } from 'framer-motion'
 const HowitWorks = () => {
   return (
     <div id="howitworks">
+        
         <motion.div className="relative flex flex-col justify center px-10 py-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
-            duration: 0.8,
+            duration: 2.8,
             delay: 0.2,
             ease: [0, 0.71, 0.2, 1.01]
             }}  
             >
-            <img src={ howitworks } alt="howitworks" className="blur-[1px] w-3/4 justify-center self-center" />
+            <img src={ howitworks } alt="howitworks" className="blur-[1px] w-3/4 justify-center self-center"/>
             <motion.div className="absolute top-[18%] left-1/4 transform -translate-x-1/4  text-brandBlack text-2xl p-5 font-poppins"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
