@@ -3,8 +3,6 @@ import { navLinks } from '../constants'
 import ContactUs from '../components/ContactUs'
 import styles from '../style'
 import { useState } from 'react'
-import menu from '../assets/menu.svg'
-import close from '../assets/close.svg'
 import { Cross as Hamburger } from 'hamburger-react'
 
 
