@@ -11,7 +11,7 @@ const OurServices = () => {
             </div>
             <div className="flex justify-center pb-8">
                 <span className="text-brandBlue text-[25px] 
-                font-poppins font-semibold py-4">BPO services commonly used by</span>
+                font-poppins font-semibold pr-2 py-4">BPO services commonly used by</span>
                 <span className="text-brandBlack text-[25px] 
                 font-poppins font-semibold p-4">Freight Forwarders</span>
             </div>
@@ -30,7 +30,7 @@ const OurServices = () => {
                     
                 </div>
                 <div className="flex flex-col justify-items-start pl-8 pr-[15%]">
-                    <img src={ services } alt="services" className="w-[2000px] h-[530px]"/>
+                    <img src={ services } alt="services" className="w-[2000px] h-[530px] xs:block hidden md:block hidden"/>
                 </div>
             </div>
             <div className="px-[15%]">

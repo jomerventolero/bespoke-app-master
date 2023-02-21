@@ -4,12 +4,13 @@ import fb_logo from '../assets/fb_logo.png'
 import linkedin_logo from '../assets/linkedin_logo.png'
 import { quickLinks } from '../constants'
 import { siteTools } from '../constants'
+import styles from '../style'
 
 
 const Footer = () =>  {
     
     return(
-        <div className={`p-1 w-full flex flex-row gap-[100px]`}>
+        <div className={`p-1 w-full flex flex-row gap-[1%`}>
             <div className={`px-6 sm:px-0 md:block hidden`}>
                 <a href='/'>
                     <img src={ logo } alt="logo" className='aspect-square w-[145px] h-[145px] cursor-pointer'/>
@@ -27,22 +28,22 @@ const Footer = () =>  {
                     </div>
                 </div>
             </div>
-            <div className="px-4">
-                <h2 className="text-brandBlue font-poppins font-semibold text-[25px] ">
+            <div className="xs:px-0 sm:px-0 md:px-0 px-4">
+                <h2 className={`text-brandBlue font-poppins font-bold ${styles.textResH3} `}>
                     CONTACT US
                 </h2>
-                <p className='font-semibold'>
+                <p className={`${styles.textResH3} font-semibold`}>
                     info@mybespokestaff.com
                 </p>
-                <h2 className="text-brandBlue font-poppins font-semibold text-[25px] pt-8">
+                <h2 className={`text-brandBlue font-semibold ${styles.textResH3} pt-8`}>
                     COMPANY ADDRESS
                 </h2>
-                <p className='font-semibold'>
+                <p className={`font-semibold ${styles.textResH3}`}>
                     Kings Court Building 1, Level 8, Chino Roces Ave,
                     <br/>Makati, Metro Manila, Philippines.
                 </p>
             </div>
-            <div>
+            <div className='xs:block hidden'>
                 <h2 className="text-brandBlue font-poppins font-semibold text-[25px] mb-2">
                     QUICK LINKS
                 </h2>

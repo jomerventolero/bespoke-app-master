@@ -8,6 +8,7 @@ import { Cross as Hamburger } from 'hamburger-react'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
+  const [onHome, setOnHome]  = useState(true)
 
   return (
     <nav className={`w-full bg-white top-0 flex shadow-xl py-1 px-6 justify-start items-center navbar`}>
@@ -42,7 +43,7 @@ const Navbar = () => {
                   className={`font-poppins font-normal cursor-pointer text-[16px] text-brandBlack ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'}`}
 
                 >
-                  <a href={`${nav.id}`} className="text-brandBlack">
+                  <a href={`${ nav.id }`} className="text-brandBlack">
                     {nav.title}
                   </a>
                 </li>

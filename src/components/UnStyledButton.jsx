@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const UnStyledButton = ({text, redirect, buttonStyle}) => {
   return (
-    <div className="text-[25px] pb-5">
+    <div className="pb-5">
         <a href={ redirect }>
             <motion.button 
               className={ buttonStyle }
