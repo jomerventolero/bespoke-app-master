@@ -9,6 +9,7 @@ const UnStyledButton = ({text, redirect, buttonStyle}) => {
               className={ buttonStyle }
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
+              type="submit"
               >
                 {text}
             </motion.button>

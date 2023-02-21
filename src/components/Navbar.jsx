@@ -29,10 +29,10 @@ const Navbar = () => {
             ))}
             
         </ul>
-        <div className="pt-6 sm:flex hidden">
+        <div className="pt-6 pr-4 md:flex hidden">
             <ContactUs/>
         </div>
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
           <Hamburger toggled={ toggle } toggle={ setToggle } />
           <div className={`${toggle ? 'flex' : 'hidden'} bg-white absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
             <ul className="list-none flex justify-end items-center flex-col flex-1">

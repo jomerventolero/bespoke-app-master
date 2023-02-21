@@ -7,13 +7,7 @@ import { siteTools } from '../constants'
 
 
 const Footer = () =>  {
-    const handleFBClick = () => {
-        window.open("www.facebook.com/MyBespokeStaff", "_blank")
-    }
-
-    const handleLnClick = () => {
-        window.open("www.linkedin.com/mybespokestaff", "_blank")
-    }
+    
     return(
         <div className={`p-1 w-full flex flex-row gap-[100px]`}>
             <div className={`px-6 sm:px-0 md:block hidden`}>
@@ -22,14 +16,14 @@ const Footer = () =>  {
                 </a>
                 <div className={`p-8 flex flex-row w-full gap-5`}>
                     <div>
-                        <button onClick={handleFBClick}>
+                        <a href="//www.facebook.com/MyBespokeStaff" target="_blank">
                             <img src={ fb_logo } alt="fb_logo" className="w-[48px] h-[48px]"/>
-                        </button>
+                        </a>
                     </div>
                     <div>
-                        <button onClick={handleLnClick}>
+                        <a href="//www.linkedin.com/mybespokestaff" target="_blank">
                             <img src={ linkedin_logo } alt="linked_logo" className="w-[48px] h-[48px]"/>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -6,12 +6,30 @@ import linkedin_logo from '../assets/linkedin_logo.png'
 import UnStyledButton from './UnStyledButton'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { motion } from 'framer-motion'
+import React, { useRef, useState } from 'react'
 import styles from '../style'
 
 const ContactForm = () => {
-  const submitForm = (value) => {
-    return console.log("Captcha value: ", value)
+
+  const form = useRef();
+  const [isVerified, setIsVerified] = useState(false)
+
+  const handleVerify = () => {
+    setIsVerified(true)
   }
+
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_ileepgo', 'bespoke-email-template',form.current, '4t8EhVp1pW3EIe4Zr')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
     <section id="contactus">
     <div className="flex flex-row justify-center pt-[5%] pb-[30px]">
@@ -51,7 +69,7 @@ const ContactForm = () => {
                 delay: 0.5
             }}
         >
-        <form className="flex flex-col px-8">
+        <form ref={ form } className="flex flex-col px-8" onSubmit={ sendEmail }>
             <div className='flex flex-col'>
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
                 <span>Talk to us.</span>
@@ -64,13 +82,15 @@ const ContactForm = () => {
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
                 <ReCAPTCHA 
-                    sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
-                    onChange={submitForm}
+                    sitekey="6Le27oskAAAAAND76UXYkHTF4x5R-EkJqFjpO0mY"
+                    onChange={ handleVerify }
                     className="py-4"
-
                 />
                 <div className="flex flex-row pt-4">
-                    <UnStyledButton buttonStyle="bg-brandBlue text-white shadow-xl text-[75%] px-[4rem] py-[1rem] rounded-[20px] font-poppins font-semibold" text="Submit" onClick={submitForm}/>
+                    <button type="submit" className={`shadow-xl text-[75%] px-[4rem] py-[1rem] rounded-[20px] font-poppins font-semibold 
+                    ${isVerified ? "text-white bg-brandBlue" : "text-brandBlack bg-brandBlack" }`} disabled={!isVerified}>
+                        Submit
+                    </button>
                 </div>
             </div>
         </form>
