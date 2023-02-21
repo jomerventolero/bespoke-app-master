@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 const Button = ({props, redirect}) => {
   return (
-    <div className="text-[25px] pb-5 md:block hidden">
+    <div className="text-[25px] md:block hidden">
         <a href={ redirect }>
             <motion.button
                 whileHover={{ scale : 1.1 }} 

@@ -11,7 +11,7 @@ const WhyChooseBespoke = () => {
         <h1 className={`font-poppins font-semibold text-brandBlack text-[35px] text-center`} >?</h1>
       </div>
       <div className="flex flex-row gap-2 justify-evenly">
-        <img src={photoRight} alt="photoRight" className="w-[50%]"/>
+        <img src={photoRight} alt="photoRight" className="min-w-xl max-w-4xl md:w-xl"/>
         <span className="font-poppins font-semibold text-[34px]  text-justify py-[5%] px-8">We are not middlemen. We find out what you need, train your bespoke staff and  implement your requirements and expectations.
 </span>
       </div>

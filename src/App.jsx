@@ -4,8 +4,10 @@ import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
 import styles from './style'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
-import { motion } from 'framer-motion'
 import Testimonials from './components/Testimonials'
+import WhyChooseBespoke from './components/WhyChooseBespoke'
+import { motion } from 'framer-motion'
+
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
         <Hero />
       </motion.div>
       <div>
+        <WhyChooseBespoke/>
         <Testimonials />
         <Footer />
       </div>
