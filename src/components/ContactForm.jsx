@@ -82,7 +82,7 @@ const ContactForm = () => {
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
                 <ReCAPTCHA 
-                    sitekey="6Le27oskAAAAAND76UXYkHTF4x5R-EkJqFjpO0mY"
+                    sitekey="6LcR9J0kAAAAACY17CRtBE0KQdrQN8TqJFTBSnT1"
                     onChange={ handleVerify }
                     className="py-4"
                 />
