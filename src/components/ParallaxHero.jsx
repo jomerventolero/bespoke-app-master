@@ -43,7 +43,7 @@ const ParallaxHero = () => {
           <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
-      <UnStyledButton buttonStyle="absolute top-[45%] left-[80%] xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue shadow-2xl" text="Contact Us!" redirect="contactus"/>
+      <UnStyledButton buttonStyle="absolute top-[75%] left-[80%] xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue shadow-2xl" text="Contact Us!" redirect="contactus"/>
     </div>
   )
 }
