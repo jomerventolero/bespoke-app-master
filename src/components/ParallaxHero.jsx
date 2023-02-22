@@ -15,7 +15,7 @@ const ParallaxHero = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex w-full h-full overflow-hidden bg-gradient-to-b from-indigo-300 via-blue-300 to-indigo-300 text-white font-bold justify-end">
-        <img src={building} className="sm:hidden w-full "/>
+        <img src={building} className="sm:hidden w-full"/>
         <div className={`flex flex-row items-center`}>
           
           <div className='absolute -left-0 justify-center pl-12'>
@@ -43,7 +43,7 @@ const ParallaxHero = () => {
           <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
-      <UnStyledButton buttonStyle="absolute top-[45%] left-[80%] lg:hidden shadow-lg rounded-full p-4 bg-brandBlue shadow-2xl" text="Contact Us!" redirect="contactus"/>
+      <UnStyledButton buttonStyle="absolute top-[45%] left-[80%] xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue shadow-2xl" text="Contact Us!" redirect="contactus"/>
     </div>
   )
 }

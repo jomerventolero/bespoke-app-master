@@ -11,6 +11,7 @@ import Card from './Card'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 import styles from '../style'
+import MobileCard from './MobileCard'
 
 const AboutUs = () => {
 
@@ -50,15 +51,28 @@ const AboutUs = () => {
                 ease: [0, 0.71, 0.2, 1.01]
             }}
         >
-            <h1 className={`font-poppins font-bold text-brandBlue text-[35px] `}>
+            <h1 className={`font-poppins text-center font-bold pb-4 text-brandBlue ${styles.textResH2}`}>
                 HOW YOUR BESPOKE STAFF CAN HELP WITH YOUR BUSINESS
             </h1>
-            <div className="flex flex-row overflow-hidden bg-slate-200 rounded-[55px] w-[95%] h-[50%] xs:flex hidden">
+            <div className="xs:flex hidden flex-row overflow-hidden bg-slate-200 rounded-[55px] w-[95%] h-[50%] ">
                 <Card  image1={ kangarooaustralia }  text="Australian reps at your beck and call"/>
                 <Card  image1={ scale0 } text="Scale faster with efficiency"/>
                 <Card  image1={ cost0 } text="Reduce staffing cost"/>
                 <Card  image1={ leverage0 } text="Leverage your productivity to focus on what you need to the most"/>
                 <Card image0={ talent1 } image1={ talent0 } text="Widen Talent search"/>
+            </div>
+            <div className="sm:hidden flex flex-col gap-6 pt-4">
+                <div className="flex flex-row gap-6">
+                    <MobileCard image1={ kangarooaustralia } text="Australian reps at your beck and call" />
+                    <MobileCard image1={ scale0 } text="Scale faster with efficiency" />
+                </div>
+                <div className="flex flex-row gap-6">
+                    <MobileCard image1={ cost0 } text="Reduce staffing cost" />
+                    <MobileCard image1={ leverage0 } text="Leverage your productivity to focus on what you need to the most" />
+                </div>
+                <div className="flex flex-col justify-center items-center">
+                    <MobileCard image1={ cost0 } text="Widen Talent search" />
+                </div>
             </div>
         </motion.div>
     </section>

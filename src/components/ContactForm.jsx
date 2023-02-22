@@ -87,7 +87,11 @@ const ContactForm = () => {
                 <span>Talk to us.</span>
                 <h5>You are just a form away. </h5>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Name*" type="text" name="name" id="name" required/>
-                <div className="flex flex-row gap-4 justify-between">
+                <div className="xs:flex hidden flex-row gap-4 justify-between">
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Email Address*" type="text" name="email" id="email" required/>
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="text" name="phonenumber" id="phonenumber" required/>
+                </div>
+                <div className="flex flex-col justify-between">
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Email Address*" type="text" name="email" id="email" required/>
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="text" name="phonenumber" id="phonenumber" required/>
                 </div>

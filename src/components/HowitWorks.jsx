@@ -109,13 +109,13 @@ const HowitWorks = () => {
             ease: [0, 0.71, 0.2, 1.01]
           }}  
           >
-            <div className="flex flex-row justify-evenly items-center px-5 py-5">
+            <div className="flex flex-row justify-evenly items-center sm:px-2 py-5">
               <div>
                 <span className={`text-brandBlack ${styles.textResH2}`}>Ready to form your very <br/> own team of</span>
                 <span className={`text-brandBlue ${styles.textResH2}`}> Bespoke <br/>Staff?</span>
               </div>
-              <div>
-                <UnStyledButton buttonStyle={`bg-brandBlue p-4 w-[100%] h-[1/4] text-white rounded-full ${styles.textResH2}`} text="Start Now" redirect="contactus"/>
+              <div className="flex justify-center content-center align-center self-center items-center">
+                <UnStyledButton buttonStyle={`bg-brandBlue p-4 text-white rounded-full ${styles.textResButton}`} text="Start Now" redirect="contactus"/>
               </div>
             </div>
           </motion.div>

@@ -15,7 +15,7 @@ const Navbar = () => {
             <img src={ logo } alt="logo" className="h-[145px] md:w-[64px] md:h-[64px] lg:w-[128px] lg:h-[128px] cursor-pointer"/>
         </a>
         <h6 className="hidden lg:block pb-20 relative left-[-1.5%] lg:text-[15px] font-semibold font-poppins md:text-12px]">Bespoke Enterprise Solutions Inc.</h6>
-        <ul className={`${styles.navbarRes} sm:flex hidden list-none xs:hidden md:flex justify-start items-center flex-1 pt-12 pb-4 h-[10%]`}>
+        <ul className={`absolute md:left-[15%] ${styles.navbarRes} sm:flex hidden list-none xs:hidden md:flex justify-start items-center flex-1 pt-12 pb-4 h-[10%]`}>
             {navLinks.map((nav, index) => 
             (
                 <li
@@ -29,13 +29,13 @@ const Navbar = () => {
             ))}
             
         </ul>
-        <div className="pt-6 pr-4 md:flex hidden">
+        <div className="absolute right-10 pt-6 pr-4 md:flex hidden">
             <ContactUs/>
         </div>
 
-        <div className='md:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center '>
           <Hamburger toggled={ toggle } toggle={ setToggle } />
-          <div className={`${toggle ? 'flex' : 'hidden'} float-right bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+          <div className={`${toggle ? 'flex' : 'hidden'} float-right absolute top-[12%] right-[-10px] bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
             <ul className="flex flex-1 flex-col justify-end items-center  ">
               {navLinks.map((nav, index) => (
                 <li

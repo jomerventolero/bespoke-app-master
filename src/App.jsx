@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="bg-white">
       <div className={`${styles.flexCenter}`}>
-          <Navbar />
+        <Navbar />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
