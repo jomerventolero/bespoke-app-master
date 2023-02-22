@@ -1,12 +1,12 @@
 import logo from '../assets/logo.png'
 import { navLinks } from '../constants'
-import ContactUs from '../components/ContactUs'
+import ContactUs from './ContactUs'
 import styles from '../style'
 import { useState } from 'react'
 import { Cross as Hamburger } from 'hamburger-react'
 
 
-const Navbar = () => {
+const SNavbar = () => {
   const [toggle, setToggle] = useState(false)
 
   return (
@@ -16,17 +16,33 @@ const Navbar = () => {
         </a>
         <h6 className="hidden lg:block pb-20 relative left-[-1.5%] lg:text-[15px] font-semibold font-poppins md:text-12px]">Bespoke Enterprise Solutions Inc.</h6>
         <ul className={`${styles.navbarRes} sm:flex hidden list-none xs:hidden md:flex justify-start items-center flex-1 pt-12 pb-4 h-[10%]`}>
-            {navLinks.map((nav, index) => 
-            (
+            
                 <li
                     key={nav.id}
                     className={`font-poppins font-bold cursor-pointer justify-between place-items-start text-[20px]  text-black ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
                 >
-                    <a href={`${nav.id}`} className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
-                        {nav.title}
+                    <a href="/" className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                        HOME
+                    </a>
+                    <a href="/" className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                        OUR SERVICES
+                    </a>
+                    <a href="/" className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                        HOW IT WORKS
+                    </a>
+                    <a href="/" className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                        JOBS
+                    </a>
+                    <a href="/" className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                        TESTIMONIALS
+                    </a>
+                    <a href="/" className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                        ABOUT US
+                    </a>
+                    <a href="/" className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
+                        RESOURCES
                     </a>
                 </li>
-            ))}
             
         </ul>
         <div className="pt-6 pr-4 md:flex hidden">
@@ -57,4 +73,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default SNavbar

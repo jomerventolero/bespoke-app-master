@@ -5,27 +5,27 @@ export const navLinks = [
       title: "HOME",
     },
     {
-      id: "/ourservices",
+      id: "ourservices",
       title: "OUR SERVICES",
     },
     {
-      id: "/howitworks",
+      id: "howitworks",
       title: "HOW IT WORKS",
     },
     {
-      id: "/jobs",
+      id: "jobs",
       title: "JOBS",
     },
     {
-      id: "#testimonials",
+      id: "testimonials",
       title: "TESTIMONIALS",
     },
     {
-      id: "/aboutus",
+      id: "aboutus",
       title: "ABOUT US",
     },
     {
-      id: "/resources",
+      id: "resources",
       title: "RESOURCES",
     },
   ];

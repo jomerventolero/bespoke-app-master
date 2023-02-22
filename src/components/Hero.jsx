@@ -39,6 +39,9 @@ const Hero = () => {
           <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
+      <div>
+        
+      </div>
   </section>
 )
 }

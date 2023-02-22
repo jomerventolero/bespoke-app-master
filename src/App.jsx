@@ -3,10 +3,10 @@ import Navbar from './components/Navbar'
 import WhatsAppFloatingButton from './components/WhatsAppFloatingButton'
 import styles from './style'
 import Footer from './components/Footer'
-import Hero from './components/Hero'
 import Testimonials from './components/Testimonials'
+import WhyChooseBespoke from './components/WhyChooseBespoke'
+import ParallaxHero from './components/ParallaxHero'
 import { motion } from 'framer-motion'
-
 
 function App() {
 
@@ -24,9 +24,10 @@ function App() {
           ease: [0, 0.71, 0.2, 1.01]
         }}  
       >
-        <Hero />
+        <ParallaxHero/>
       </motion.div>
       <div>
+        <WhyChooseBespoke/>
         <Testimonials />
         <Footer />
       </div>

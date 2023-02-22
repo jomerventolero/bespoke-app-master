@@ -22,6 +22,9 @@ module.exports = {
         md: "12px",
         lg: "15px",
         xl: "18px",
+      },
+      backgroundImage: {
+        "background": "url('src/assets/mainherosection.png')"
       }
     },
     screens: {
@@ -32,6 +35,7 @@ module.exports = {
       lg: "1200px",
       xl: "1600px",
     },
+
   },
   plugins: [],
 };

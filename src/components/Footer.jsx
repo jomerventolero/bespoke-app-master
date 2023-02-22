@@ -10,7 +10,7 @@ import styles from '../style'
 const Footer = () =>  {
     
     return(
-        <div className={`p-1 w-full flex flex-row gap-[1%`}>
+        <div className={`p-1 w-full flex flex-row gap-[1%] pt-8`}>
             <div className={`px-6 sm:px-0 md:block hidden`}>
                 <a href='/'>
                     <img src={ logo } alt="logo" className='aspect-square w-[145px] h-[145px] cursor-pointer'/>
@@ -43,8 +43,8 @@ const Footer = () =>  {
                     <br/>Makati, Metro Manila, Philippines.
                 </p>
             </div>
-            <div className='xs:block hidden'>
-                <h2 className="text-brandBlue font-poppins font-semibold text-[25px] mb-2">
+            <div className={`${styles.textResH3} xs:px-2 px-4`}>
+                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH3} mb-2`}>
                     QUICK LINKS
                 </h2>
                 
@@ -61,8 +61,8 @@ const Footer = () =>  {
                     )}
                 </ul>
             </div>
-            <div>
-                <h2 className='text-brandBlue font-poppins font-semibold text-[25px]'>
+            <div className={`${styles.textResH3} px-8 xs:block hidden`}>
+                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH3}`}>
                     SITE TOOLS
                 </h2>
                 <ul>

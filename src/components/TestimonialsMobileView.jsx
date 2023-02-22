@@ -41,7 +41,7 @@ const AboutUs = () => {
                 <img src={securityicon} alt="securityicon" className='lg:block hidden w-[360px] h-[380px] items-center'/>
             </div>
         </motion.div>
-        <motion.div className="flex flex-col justify-center items-center px-10 py-2"
+        <motion.div className="flex flex-col justify-center items-center px-10 py-2 xs:block hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ 
@@ -50,10 +50,10 @@ const AboutUs = () => {
                 ease: [0, 0.71, 0.2, 1.01]
             }}
         >
-            <h1 className={`font-poppins font-bold text-brandBlue text-[35px] `}>
+            <h1 className={`font-poppins font-bold text-brandBlue text-[35px]`}>
                 HOW YOUR BESPOKE STAFF CAN HELP WITH YOUR BUSINESS
             </h1>
-            <div className="flex flex-row overflow-hidden bg-slate-200 rounded-[55px] w-[95%] h-[50%] xs:flex hidden">
+            <div className="flex flex-row overflow-hidden bg-slate-200 rounded-[55px] w-[95%] h-[50%]">
                 <Card  image1={ kangarooaustralia }  text="Australian reps at your beck and call"/>
                 <Card  image1={ scale0 } text="Scale faster with efficiency"/>
                 <Card  image1={ cost0 } text="Reduce staffing cost"/>

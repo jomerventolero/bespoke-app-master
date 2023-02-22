@@ -45,7 +45,7 @@ const ContactForm = () => {
         Thank you for inquiring to us!
     </motion.div>
     <div className={`${ isSubmitted ? "hidden" : "flex flex-row justify-center pt-[5%] pb-[30px]"}`}>
-        <motion.div className="flex flex-col bg-slate-900 shadow-2xl rounded-[15px] pt-[3%] h-auto w-[25%] pl-8 pr-8 py-6 object-contain"
+        <motion.div className="md:flex hidden flex-col bg-slate-900 shadow-2xl rounded-[15px] pt-[20px] h-auto w-[25%] pl-8 pr-8 py-6 object-contain"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ 
@@ -65,7 +65,7 @@ const ContactForm = () => {
                 <span className="text-white font-semibold self-center pl-4 xl:text-xl lg:text-lg md:text-md sm:text-sm ss:text-ss">info@mybespokestaff.com</span>
             </div>
             <div className="flex flex-row justify-start pt-8">
-                <img src={location} alt="location" className="w-[35%] h-[50%] aspect-square" />
+                <img src={location} alt="location" className="w-[25%] h-[80%] aspect-square" />
                 <span className="text-white font-semibold self-center pl-4 xl:text-xl lg:text-lg md:text-md sm:text-sm ss:text-ss">King's Court Building 1, Level 8, Chino Roces Ave, Makati, Metro Manila, Philippines.</span>
             </div>
             <div className="flex flex-row gap-4 justify-start pt-[4rem] pb-[2rem]">

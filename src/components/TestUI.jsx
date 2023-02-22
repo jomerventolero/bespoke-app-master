@@ -1,4 +1,3 @@
-import React from 'react'
 import howitworks from '../assets/howitworks.png'
 import one from '../assets/1.png'
 import two from '../assets/2.png'
@@ -8,8 +7,9 @@ import UnStyledButton from './UnStyledButton'
 import { motion } from 'framer-motion'
 import styles from '../style'
 
-const HowitWorks = () => {
+const TestUI = () => {
   return (
+    <div>
     <div id="howitworks">
         
         <motion.div className="relative flex flex-col justify center px-10 py-8"
@@ -23,7 +23,7 @@ const HowitWorks = () => {
             >
               <img src={ howitworks } alt="howitworks" className="w-full justify-center self-center"/>
         </motion.div>
-        <motion.div className="lg:flex hidden flex-row gap-4 px-8 py-4">
+        <motion.div className="lg:flex hidden flex-row px-8 py-4">
             <motion.img src={one} alt="one" className="w-[80%] h-[20%]" 
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
@@ -121,7 +121,8 @@ const HowitWorks = () => {
           </motion.div>
         </div>
     </div>
+    </div>
   )
 }
 
-export default HowitWorks
+export default TestUI

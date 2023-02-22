@@ -7,7 +7,7 @@ const UnStyledButton = ({text, redirect, buttonStyle}) => {
         <a href={ redirect }>
             <motion.button 
               className={ buttonStyle }
-              whileHover={{ scale: 1.1 }}
+              whileHover={{  scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
               type="submit"
               >
