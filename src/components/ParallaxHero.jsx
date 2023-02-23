@@ -9,17 +9,16 @@ import customer from '../assets/Icons/customersupport.png'
 import dataentry from '../assets/Icons/dataentry.png'
 import mainherosection from '../assets/mainherosection.png'
 import building from '../assets/building.png'
-
+import video from '../assets/video.mp4'
 
 const ParallaxHero = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       <div className="flex w-full h-full overflow-hidden bg-gradient-to-b from-indigo-300 via-blue-300 to-indigo-300 text-white font-bold justify-end">
-        <img src={building} className="sm:hidden w-full"/>
         <div className={`flex flex-row items-center`}>
           
           <div className='absolute -left-0 justify-center pl-12'>
-            <h1 className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-white pr-4 pt-8 drop-shadow-2xl`}>
+            <h1 className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-slate-400 pr-4 pt-8 drop-shadow-2xl`}>
               WE TAKE THE {" "}<br className="sm:block hidden"/>
               <span className="text-yellow-400">COMPLICATED</span> {" "} OUT OF <br />
               YOUR OUTSOURCING NEEDS!
@@ -28,7 +27,9 @@ const ParallaxHero = () => {
             <UnStyledButton buttonStyle="xs:hidden md:hidden lg:hidden shadow-lg xs:w-[40px] ss:w-[45px] rounded-full p-4 bg-brandBlack" text="Contact Us!" redirect="contactus"/>
           </div>
         </div>
-        <img className="sm:block hidden w-[70%] h-[100%]" src={mainherosection} alt="mainherosection" />
+        <video loop autoPlay muted className="object-cover w-screen h-[50%]">
+          <source src={video} type="video/mp4"/>
+        </video>
       </div>
       <div className='pr-[50px] pl-[50px] md:block hidden'>
         <div className='w-full h-full p-12 gap-10 content-around flex flex-row'>
@@ -43,7 +44,7 @@ const ParallaxHero = () => {
           <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
-      <UnStyledButton buttonStyle="absolute top-[75%] left-[80%] xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue shadow-2xl" text="Contact Us!" redirect="contactus"/>
+      <UnStyledButton buttonStyle="absolute top-[55%] left-[80%] xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue shadow-2xl" text="Contact Us!" redirect="contactus"/>
     </div>
   )
 }
