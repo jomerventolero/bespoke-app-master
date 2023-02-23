@@ -2,13 +2,15 @@ import React from 'react'
 import aboutus from '../assets/aboutus.png'
 import gradientbox from '../assets/gradient-box.png'
 import aboutusmobile from '../assets/aboutusmobile.png'
+import aboutusmobile1 from '../assets/aboutusmobile1.png'
 
 const AboutUs = () => {
   return (
     <div id="aboutus" className="flex flex-col overflow-hidden justify-center">
         <div className="flex flex-col justify-center">
-            <img src={ aboutus } alt="aboutus" className="xs:block hidden w-auto h-auto"/>
-            <img src={ aboutusmobile } alt="aboutus-mobile" className="md:block hidden w-auto h-auto"/>
+            <img src={ aboutus } alt="aboutus" className="sm:block hidden w-auto h-auto"/>
+            <img src={ aboutusmobile } alt="aboutus-mobile" className="sm:hidden w-auto h-auto"/>
+            <img src={ aboutusmobile1 } alt="aboutus-mobile1" className="sm:hidden w-auto h-auto p-8"/>
             <div className="flex justify-center py-5">
                 <h1 className="text-brandBlue font-poppins font-semibold text-[30px]">WHO WE ARE</h1>
             </div>
