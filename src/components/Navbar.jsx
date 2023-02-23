@@ -12,15 +12,15 @@ const Navbar = () => {
   return (
     <nav className={`w-full bg-white top-0 flex shadow-xl py-1 px-6 justify-start items-center navbar`}>
         <a href='/'>
-            <img src={ logo } alt="logo" className="h-auto xs:w-[32px] md:w-[64px] lg:w-[128px] cursor-pointer"/>
+            <img src={ logo } alt="logo" className="object-contain block w-[25%] cursor-pointer "/>
         </a>
-        <h6 className="hidden lg:block pb-20 relative left-[-1.5%] lg:text-[15px] font-semibold font-poppins md:text-12px]">Bespoke Enterprise Solutions Inc.</h6>
+        <h6 className="hidden lg:block pb-20 absolute top-[1%] left-[6.5%] lg:text-[15px] font-semibold font-poppins md:text-12px]">Bespoke Enterprise Solutions Inc.</h6>
         <ul className={`absolute md:left-[15%] ${styles.navbarRes} sm:flex hidden list-none xs:hidden md:flex justify-start items-center flex-1 pt-12 pb-4 h-[10%]`}>
             {navLinks.map((nav, index) => 
             (
                 <li
                     key={nav.id}
-                    className={`font-poppins font-bold cursor-pointer justify-between place-items-start text-[20px]  text-black ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
+                    className={`font-poppins font-bold cursor-pointer justify-between place-items-start text-[20px] text-black ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
                 >
                     <a href={`${nav.id}`} className={`hover:text-brandBlue text-center max-h-4 ${styles.textResNavLinks} `}>
                         {nav.title}
@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <div className='md:hidden flex flex-1 justify-end items-center '>
           <Hamburger toggled={ toggle } toggle={ setToggle } />
-          <div className={`${toggle ? 'flex' : 'hidden'} float-right absolute top-[12%] right-[-10px] bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+          <div className={`${toggle ? 'flex' : 'hidden'} float-right top-[12%] right-[-10px] bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
             <ul className="flex flex-1 flex-col justify-end items-center  ">
               {navLinks.map((nav, index) => (
                 <li
