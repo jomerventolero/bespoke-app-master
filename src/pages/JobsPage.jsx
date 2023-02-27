@@ -15,7 +15,7 @@ const JobsPage = () => {
               delay: 0.5
           }}
       >Contact us at<br/>
-      info@mybespokestaff.com
+      employment@mybespokestaff.com
       </motion.div>
       <Footer />
     </div>

@@ -7,8 +7,6 @@ import accounting from '../assets/Icons/accounting.png'
 import lineseperator from '../assets/Icons/lineseperator.png'
 import customer from '../assets/Icons/customersupport.png'
 import dataentry from '../assets/Icons/dataentry.png'
-import mainherosection from '../assets/mainherosection.png'
-import building from '../assets/building.png'
 import video from '../assets/video.mp4'
 
 const ParallaxHero = () => {
