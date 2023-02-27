@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import Testimonials from './components/Testimonials'
 import WhyChooseBespoke from './components/WhyChooseBespoke'
 import ParallaxHero from './components/ParallaxHero'
+
 import { motion } from 'framer-motion'
 
 function App() {

@@ -10,7 +10,7 @@ import styles from '../style'
 const Footer = () =>  {
     
     return(
-        <div className={`p-1 w-full flex flex-row gap-[1%] pt-8`}>
+        <div className={`p-1 w-full flex flex-row gap-[1%] pt-8 justify-center`}>
             <div className={`px-6 sm:px-0 md:block hidden`}>
                 <a href='/'>
                     <img src={ logo } alt="logo" className='aspect-square w-[145px] h-[145px] cursor-pointer'/>
@@ -29,22 +29,22 @@ const Footer = () =>  {
                 </div>
             </div>
             <div className="xs:px-0 sm:px-0 md:px-0 px-4">
-                <h2 className={`text-brandBlue font-poppins font-bold ${styles.textResH3} `}>
+                <h2 className={`text-brandBlue font-poppins font-bold ${styles.textResH4} `}>
                     CONTACT US
                 </h2>
-                <p className={`${styles.textResH3} font-semibold`}>
+                <p className={`${styles.textResH4} font-semibold`}>
                     info@mybespokestaff.com
                 </p>
-                <h2 className={`text-brandBlue font-semibold ${styles.textResH3} pt-8`}>
+                <h2 className={`text-brandBlue font-semibold ${styles.textResH4} pt-8`}>
                     COMPANY ADDRESS
                 </h2>
-                <p className={`font-semibold ${styles.textResH3}`}>
+                <p className={`font-semibold ${styles.textResH4}`}>
                     Kings Court Building 1, Level 8, Chino Roces Ave,
                     <br/>Makati, Metro Manila, Philippines.
                 </p>
             </div>
-            <div className={`${styles.textResH3} xs:px-2 px-4`}>
-                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH3} mb-2`}>
+            <div className={`${styles.textResH4} xs:px-2 px-4`}>
+                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH4} mb-2`}>
                     QUICK LINKS
                 </h2>
                 
@@ -61,8 +61,8 @@ const Footer = () =>  {
                     )}
                 </ul>
             </div>
-            <div className={`${styles.textResH3} px-8 xs:block hidden`}>
-                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH3}`}>
+            <div className={`${styles.textResH4} px-8 xs:block hidden`}>
+                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH4}`}>
                     SITE TOOLS
                 </h2>
                 <ul>
@@ -78,7 +78,6 @@ const Footer = () =>  {
                     )}
                 </ul>
             </div>
-
         </div>
     )
 }

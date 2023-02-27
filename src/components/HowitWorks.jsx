@@ -32,6 +32,7 @@ const HowitWorks = () => {
                 delay: 0.2,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
             <motion.img src={two} alt="two" className="w-[80%] h-[20%]"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -41,6 +42,7 @@ const HowitWorks = () => {
                 delay: 0.3,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
             <motion.img src={three} alt="three" className="w-[80%] h-[20%]"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -50,6 +52,7 @@ const HowitWorks = () => {
                 delay: 0.4,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
             <motion.img src={four} alt="four" className="w-[80%] h-[20%]"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -59,6 +62,7 @@ const HowitWorks = () => {
                 delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
         </motion.div>
         <motion.div className="md:hidden flex flex-col px-[20%] pb-4 justify-center items-center">
@@ -70,6 +74,7 @@ const HowitWorks = () => {
                 delay: 0.2,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
             <motion.img src={two} alt="two" className="w-[80%] h-[20%]"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -79,6 +84,7 @@ const HowitWorks = () => {
                 delay: 0.3,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
             <motion.img src={three} alt="three" className="w-[80%] h-[20%]"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -88,6 +94,7 @@ const HowitWorks = () => {
                 delay: 0.4,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
             <motion.img src={four} alt="four" className="w-[80%] h-[20%]"
                 initial={{ opacity: 0, scale: 0.5 }}
@@ -97,6 +104,7 @@ const HowitWorks = () => {
                 delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01]
               }}  
+              drag="false"
             />
         </motion.div>
         <div className="flex flex-col  overflow-hidden px-[15%] pb-4">
@@ -115,7 +123,7 @@ const HowitWorks = () => {
                 <span className={`text-brandBlue ${styles.textResH2}`}> Bespoke <br/>Staff?</span>
               </div>
               <div className="flex justify-center content-center align-center self-center items-center">
-                <UnStyledButton buttonStyle={`bg-brandBlue p-4 text-white rounded-full ${styles.textResButton}`} text="Start Now" redirect="contactus"/>
+                <UnStyledButton buttonStyle={`bg-brandBlue p-4 m-8 text-white rounded-full ${styles.textResH4}`} text="Start Now" redirect="contactus"/>
               </div>
             </div>
           </motion.div>

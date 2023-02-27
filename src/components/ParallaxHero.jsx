@@ -15,7 +15,7 @@ const ParallaxHero = () => {
       <div className="flex w-full h-full overflow-hidden bg-gradient-to-b from-indigo-300 via-blue-300 to-indigo-300 text-white font-bold justify-end">
         <div className={`flex flex-row items-center`}>
           
-          <div className='absolute -left-0 justify-center pl-12'>
+          <div className='absolute -left-0 flex flex-col justify-center pl-12'>
             <h1 className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-slate-400 pr-4 pt-8 drop-shadow-2xl`}>
               WE TAKE THE {" "}<br className="sm:block hidden"/>
               <span className="text-yellow-400">COMPLICATED</span> {" "} OUT OF <br />
@@ -23,6 +23,7 @@ const ParallaxHero = () => {
             </h1>
             <Button props="Read More"/>
             <UnStyledButton buttonStyle="xs:hidden md:hidden lg:hidden shadow-lg xs:w-[40px] ss:w-[45px] rounded-full p-4 bg-brandBlack" text="Contact Us!" redirect="contactus"/>
+            
           </div>
         </div>
         <video loop autoPlay muted className="object-cover w-screen h-[50%]">
@@ -42,7 +43,7 @@ const ParallaxHero = () => {
           <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
-      <UnStyledButton buttonStyle="absolute top-[55%] left-[80%] xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue shadow-2xl" text="Contact Us!" redirect="contactus"/>
+      <UnStyledButton buttonStyle="m-8 xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue text-white shadow-2xl" text="Contact Us!" redirect="contactus"/>
     </div>
   )
 }

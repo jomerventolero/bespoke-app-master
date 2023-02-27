@@ -80,6 +80,7 @@ const ContactForm = () => {
                 duration: 0.8,
                 delay: 0.5
             }}
+            className="flex lg:hidden"
         >
         <form ref={ form } className={`flex flex-col px-8 }`} onSubmit={ sendEmail }>
             <div className='flex flex-col'>
@@ -87,11 +88,45 @@ const ContactForm = () => {
                 <span>Talk to us.</span>
                 <h5>You are just a form away. </h5>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Name*" type="text" name="name" id="name" required/>
-                <div className="xs:flex hidden flex-row gap-4 justify-between">
+                <div className="flex flex-col justify-between">
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Email Address*" type="text" name="email" id="email" required/>
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="text" name="phonenumber" id="phonenumber" required/>
                 </div>
-                <div className="flex flex-col justify-between">
+                <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
+                <ReCAPTCHA 
+                    sitekey="6LcR9J0kAAAAACY17CRtBE0KQdrQN8TqJFTBSnT1"
+                    onChange={ handleVerify }
+                    className="py-4"
+                />
+                <div className="flex flex-row pt-4">
+                    <button type="submit" className={`shadow-2xl text-[75%] px-[4rem] py-[1rem] rounded-[20px] font-poppins font-semibold 
+                    ${ isVerified ? "text-white bg-brandBlue" : "text-brandBlack bg-transparent" }`} disabled={!isVerified}>
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+        </motion.div>
+
+
+
+        <motion.div
+            initial={{opacity: 0}}
+            animate={{ opacity: 1 }}
+            transition={{
+                duration: 0.8,
+                delay: 0.5
+            }}
+            className="lg:flex hidden"
+        >
+        <form ref={ form } className={`flex flex-col px-8 }`} onSubmit={ sendEmail }>
+            <div className='flex flex-col'>
+                <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
+                <span>Talk to us.</span>
+                <h5>You are just a form away. </h5>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Name*" type="text" name="name" id="name" required/>
+                <div className="flex flex-row justify-between">
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Email Address*" type="text" name="email" id="email" required/>
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="text" name="phonenumber" id="phonenumber" required/>
                 </div>

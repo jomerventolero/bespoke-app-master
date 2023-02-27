@@ -17,6 +17,7 @@ const styles = {
     textResH1: "xl:text-[70px] lg:text-[66px] md:text-[66px] sm:text-[66px] ss:text-[56px] xs:text-[38px]",
     textResH2: "xl:text-[20px] lg:text-[16x] md:text-[14px] sm:text-[12px] ss:text-[6px] xs:text-[4px]",
     textResH3: "xl:text-[18px] lg:text-[15px] md:text-[14px] sm:text-[8px] ss:text-[2px] xs:text-[2px]",
+    textResH4: "xl:text-[25px] lg:text-[22px] md:text-[20px] sm:text-[12px] ss:text-[10px] xs:text-[8px]",
     textRes: "xl:text-[20px] lg:text-[12px] md:text-[10px] sm:text-[8px] ss:text-[6px] xs:text-[4px]",
     textResCard: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
     textResHeadings: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
