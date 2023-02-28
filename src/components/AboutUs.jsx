@@ -17,9 +17,9 @@ const AboutUs = () => {
             }}
             
             className="flex flex-col justify-center">
-            <img src={ aboutus } alt="aboutus" className="sm:block hidden w-auto h-auto"/>
-            <img src={ aboutusmobile } alt="aboutus-mobile" className="sm:hidden w-auto h-auto"/>
-            <img src={ aboutusmobile1 } alt="aboutus-mobile1" className="sm:hidden w-auto h-auto p-8"/>
+            <img src={ aboutus } draggable={false} alt="aboutus" className="sm:block hidden w-auto h-auto"/>
+            <img src={ aboutusmobile } draggable={false} alt="aboutus-mobile" className="sm:hidden w-auto h-auto"/>
+            <img src={ aboutusmobile1 } draggable={false} alt="aboutus-mobile1" className="sm:hidden w-auto h-auto p-8"/>
             <div className="flex justify-center py-5">
                 <h1 className="text-brandBlue font-poppins font-semibold text-[30px]">WHO WE ARE</h1>
             </div>
