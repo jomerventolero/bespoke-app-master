@@ -26,6 +26,7 @@ const styles = {
     textResP: "xl:text-[30px] lg:text-[25px] md:text-[20px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
     textResButton: "xl:text-[10px] lg:text-[8px] md:text-[6px] sm:text-[4px] ss:text-[4px] xs:text-[2px]",
 
+    textResTitle: "xl:text-[30px] lg:text-[28px] md:text-[25px] sm:text-[25px] ss:text-[10px] xs:text-[10px]",
     navbarRes: "sm:hidden ss:hidden xs:hidden"
   };
   

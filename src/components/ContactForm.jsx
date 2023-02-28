@@ -25,15 +25,15 @@ const ContactForm = () => {
     setIsSubmitted(true)
     emailjs.sendForm('service_ileepgo', 'bespoke-email-template', form.current, '4t8EhVp1pW3EIe4Zr')
       .then((result) => {
-          console.log(result.text);
+          console.log(result.text)
       }, (error) => {
-          console.log(error.text);
+          console.log(error.text)
       });
   };
 
   return (
     <section id="contactus">
-    <motion.div className={`${!isSubmitted ? "hidden" : "flex text-[50px] text-brandBlue font-bold justify-center"}`}
+    <motion.div className={`${!isSubmitted ? "hidden" : "flex text-[45px] text-center text-brandBlue font-bold justify-center"}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ 

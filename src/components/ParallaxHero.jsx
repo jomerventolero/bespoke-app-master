@@ -8,6 +8,7 @@ import lineseperator from '../assets/Icons/lineseperator.png'
 import customer from '../assets/Icons/customersupport.png'
 import dataentry from '../assets/Icons/dataentry.png'
 import video from '../assets/video.mp4'
+import videowebm from '../assets/video.webm'
 
 const ParallaxHero = () => {
   return (
@@ -26,7 +27,8 @@ const ParallaxHero = () => {
             
           </div>
         </div>
-        <video loop autoPlay muted className="object-cover w-screen h-[50%]">
+        <video loop autoPlay muted playsInLine className="object-cover w-screen h-[50%]">
+          <source src={videowebm} type="video/webm"/>
           <source src={video} type="video/mp4"/>
         </video>
       </div>
