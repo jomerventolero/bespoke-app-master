@@ -58,7 +58,7 @@ const ContactForm = () => {
             <span className="text-white">You can reach us at:</span>
             <div className="flex flex-row justify-star pt-8">
                 <img src={phone} alt="phone" className="w-[15%] h-[120%]" />
-                <span className="text-white font-semibold self-center pl-4 xl:text-xl lg:text-lg md:text-md sm:text-sm ss:text-ss">+63 917 166 8840</span>
+                <span className="text-white font-semibold self-center pl-4 xl:text-xl lg:text-lg md:text-md sm:text-sm ss:text-ss">+63 917 165 8840</span>
             </div>
             <div className="flex flex-row justify-start pt-8">
                 <img src={mail} alt="mail" className="w-[15%]" />
