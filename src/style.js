@@ -14,7 +14,7 @@ const styles = {
     marginX: "sm:mx-16 mx-6",
     marginY: "sm:my-16 my-6",
 
-    textResH1: "xl:text-[70px] lg:text-[66px] md:text-[66px] sm:text-[66px] ss:text-[56px] xs:text-[38px]",
+    textResH1: "xl:text-[70px] lg:text-[66px] md:text-[56px] sm:text-[46px] ss:text-[36px] xs:text-[26px]",
     textResH2: "xl:text-[20px] lg:text-[16x] md:text-[14px] sm:text-[12px] ss:text-[6px] xs:text-[4px]",
     textResH3: "xl:text-[18px] lg:text-[15px] md:text-[14px] sm:text-[8px] ss:text-[2px] xs:text-[2px]",
     textResH4: "xl:text-[25px] lg:text-[22px] md:text-[20px] sm:text-[12px] ss:text-[10px] xs:text-[8px]",
@@ -27,6 +27,7 @@ const styles = {
     textResButton: "xl:text-[10px] lg:text-[8px] md:text-[6px] sm:text-[4px] ss:text-[4px] xs:text-[2px]",
 
     textResTitle: "xl:text-[30px] lg:text-[28px] md:text-[25px] sm:text-[25px] ss:text-[10px] xs:text-[10px]",
+    textResHeadline: "xl:text-[30px] lg:text-[28px] md:text-[25px] sm:text-[25px] ss:text-[10px] xs:text-[10px]",
     navbarRes: "sm:hidden ss:hidden xs:hidden"
   };
   
