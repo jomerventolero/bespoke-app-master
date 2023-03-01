@@ -12,9 +12,7 @@ function App() {
 
   return (
     <div className="bg-white">
-      <div>
         <Navbar />
-      </div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -23,7 +21,7 @@ function App() {
             delay: 0.2,
             ease: [0, 0.71, 0.2, 1.01]
           }}  
-          className="absolute top-[10%]"
+          className="absolute top-[10%] w-screen"
         >
           <ParallaxHero/>
           <div className="px-[10%]">
@@ -32,7 +30,7 @@ function App() {
           </div>
           <Footer />
         </motion.div>
-      <WhatsAppFloatingButton />
+        <WhatsAppFloatingButton />
 
     </div>
   )

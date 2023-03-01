@@ -29,7 +29,7 @@ const Navbar = () => {
             ))}
             
         </ul>
-        <div className="absolute right-10 pt-6 pr-4 pb-4 md:flex hidden">
+        <div className="absolute right-10 pt-6 pr-4 pb-4 lg:block hidden">
             <ContactUs/>
         </div>
 

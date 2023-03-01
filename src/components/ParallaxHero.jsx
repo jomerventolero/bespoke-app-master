@@ -10,9 +10,9 @@ import videowebm from '../assets/video.webm'
 
 const ParallaxHero = () => {
   return (
-    <div className="top-[-25%] flex flex-col justify-center items-center">
-      <div className="flex w-full h-full overflow-hidden text-white font-bold">
-        <div className={`flex flex-row items-center`}>
+    <div className="top-[-25%] flex flex-col justify-center items-center w-screen overflow-hidden">
+      <div className="flex overflow-hidden text-white font-bold">
+        <div className={`flex flex-row items-center z-10`}>
           
           <div className='absolute -left-0 flex flex-col justify-center pl-12'>
             <h1 className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-brandBlack pr-4 pt-8 drop-shadow-2xl`}>
@@ -26,11 +26,9 @@ const ParallaxHero = () => {
             <a href="ourservices" className={`sm:hidden text-white text-center ${styles.textResButton} rounded-full px-1 py-3 bg-brandBlue w-[45%] hover:bg-brandBlack cursor-pointer z-40`}>
               Read More
             </a>
-            
-            
           </div>
         </div>
-        <video loop autoPlay muted playsInLine className="object-cover">
+        <video loop autoPlay muted playsInLine className="object-cover aspect-video w-screen z-0">
           <source src={ videowebm } type="video/webm"/>
           <source src={ video } type="video/mp4"/>
         </video>

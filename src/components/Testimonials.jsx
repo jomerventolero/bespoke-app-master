@@ -19,7 +19,7 @@ const AboutUs = () => {
 
   return (
     <section id="testimonials" className='pt-8'>
-        <motion.div className="w-full h-full flex flex-row bg-gradient-to-b from-indigo-300 to-cyan-200 justify-evenly"
+        <motion.div className="w-full h-full flex flex-row bg-gradient-to-b from-indigo-300 to-cyan-200 justify-center"
             isFocused={() => setIsFocused(true)}  
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -40,7 +40,7 @@ const AboutUs = () => {
                 <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 hover:bg-brandBlack font-semibold font-poppins" redirect="contactus" />
             </div>
             <div className='items-center flex justify-center'>
-                <img src={securityicon} alt="securityicon" className='lg:block hidden w-[360px] h-[380px] items-center'/>
+                <img src={securityicon} alt="securityicon" className='lg:block hidden w-[150%] h-auto items-center'/>
             </div>
         </motion.div>
         <motion.div className="flex flex-col justify-center items-center px-10 py-2"

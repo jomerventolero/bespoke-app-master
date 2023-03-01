@@ -7,8 +7,10 @@ const TestimonialsPage = () => {
   return (
     <div>
       <Navbar/>
-      <Testimonials/>
-      <Footer/>
+      <div className='absolute top-[8%] flex flex-col justify-center'>
+        <Testimonials/>
+        <Footer/>
+      </div>  
     </div>
   )
 }

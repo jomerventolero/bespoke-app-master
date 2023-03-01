@@ -6,8 +6,10 @@ export default function() {
     return(
         <div>
             <Navbar/>
-            <HowitWorks/>
-            <Footer/>
+            <div className="absolute top-[12%]">
+                <HowitWorks/>
+                <Footer/>
+            </div>
         </div>
     )
 }
