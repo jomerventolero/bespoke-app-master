@@ -6,7 +6,7 @@ const Button = ({props, redirect}) => {
     <div className="text-[25px] lg:block hidden">
         <a href={ redirect }>
             <motion.button
-                className={`bg-brandBlack text-white hover:bg-brandBlue rounded-full min-h-[68px] px-10 shadow-lg`}>
+                className={`bg-brandBlack text-white hover:bg-brandBlue rounded-full min-h-[68px] px-10 shadow-lg cursor-pointer`}>
                 {props}
             </motion.button>
         </a>
