@@ -18,7 +18,7 @@ const AboutUs = () => {
   const [isFocused, setIsFocused] = useState(false);
 
   return (
-    <section id="testimonials">
+    <section id="testimonials" className='pt-8'>
         <motion.div className="w-full h-full flex flex-row bg-gradient-to-b from-indigo-300 to-cyan-200 justify-evenly"
             isFocused={() => setIsFocused(true)}  
             initial={{ opacity: 0 }}
@@ -29,8 +29,9 @@ const AboutUs = () => {
                 ease: [0, 0.71, 0.2, 1.01]
             }}
         >
-            <div className="flex flex-col pt-12 pl-5 max-w-[900px] w-900px pb-5">
-                <span className={`w-[3/4] h-full ${styles.textResP} pb-4`}>
+            <div className="flex flex-col pt-12 pl-5 max-w-[600px] w-800px pb-5">
+                <span className={`w-[3/4] h-3/4 ${styles.textRes2} pb-4`}>
+                    <br/>
                     With the constant advancements in technology, you can be sure the data we <br/>process for you is secured in our in-house dedicated server under lock and key <br/>with 24 hours surveillance monitoring.
                     <br/>
                     <br/>
@@ -51,7 +52,7 @@ const AboutUs = () => {
                 ease: [0, 0.71, 0.2, 1.01]
             }}
         >
-            <h1 className={`font-poppins text-center font-bold pb-4 text-brandBlue ${styles.textResH2}`}>
+            <h1 className={`font-poppins text-center font-bold pb-4 pt-8 text-brandBlue ${styles.textResHeadline}`}>
                 HOW YOUR BESPOKE STAFF CAN HELP WITH YOUR BUSINESS
             </h1>
             <div className="xs:flex hidden flex-row overflow-hidden bg-slate-200 rounded-[55px] w-[95%] h-[50%] ">
