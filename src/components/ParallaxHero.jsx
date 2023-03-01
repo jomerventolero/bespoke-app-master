@@ -1,7 +1,5 @@
 import CustomButton from './CustomButton'
 import styles from '../style'
-import Button from './Button'
-import UnStyledButton from './UnStyledButton'
 import marketing from '../assets/Icons/marketing.png'
 import accounting from '../assets/Icons/accounting.png'
 import lineseperator from '../assets/Icons/lineseperator.png'
@@ -12,28 +10,33 @@ import videowebm from '../assets/video.webm'
 
 const ParallaxHero = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
-      <div className="flex w-full h-full overflow-hidden bg-gradient-to-b from-indigo-300 via-blue-300 to-indigo-300 text-white font-bold justify-end">
+    <div className="top-[-25%] flex flex-col justify-center items-center">
+      <div className="flex w-full h-full overflow-hidden text-white font-bold">
         <div className={`flex flex-row items-center`}>
           
           <div className='absolute -left-0 flex flex-col justify-center pl-12'>
-            <h1 className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-slate-400 pr-4 pt-8 drop-shadow-2xl`}>
-              WE TAKE THE {" "}<br className="sm:block hidden"/>
-              <span className="text-yellow-400">COMPLICATED</span> {" "} OUT OF <br />
-              YOUR OUTSOURCING NEEDS!
+            <h1 className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-brandBlack pr-4 pt-8 drop-shadow-2xl`}>
+              "WE TAKE THE {" "}<br className="sm:block hidden"/>
+              <span className="text-brandBlue text-gradient">COMPLICATED</span> {" "} OUT OF <br />
+              YOUR OUTSOURCING NEEDS!"
             </h1>
-            <Button props="Read More"/>
-            <UnStyledButton buttonStyle="xs:hidden md:hidden lg:hidden shadow-lg xs:w-[40px] ss:w-[45px] rounded-full p-4 bg-brandBlack" text="Contact Us!" redirect="contactus"/>
+            <a href="ourservices" className="xs:block hidden text-white text-center rounded-full px-1 py-3 bg-brandBlue w-[15%] hover:bg-brandBlack cursor-pointer z-40">
+              Read More
+            </a>
+            <a href="ourservices" className={`sm:hidden text-white text-center ${styles.textResButton} rounded-full px-1 py-3 bg-brandBlue w-[45%] hover:bg-brandBlack cursor-pointer z-40`}>
+              Read More
+            </a>
+            
             
           </div>
         </div>
-        <video loop autoPlay muted playsInLine className="object-cover w-screen h-[50%]">
-          <source src={videowebm} type="video/webm"/>
-          <source src={video} type="video/mp4"/>
+        <video loop autoPlay muted playsInLine className="object-cover">
+          <source src={ videowebm } type="video/webm"/>
+          <source src={ video } type="video/mp4"/>
         </video>
       </div>
-      <div className='pr-[50px] pl-[50px] md:block hidden'>
-        <div className='w-full h-full p-12 gap-10 content-around flex flex-row'>
+      <div className=' px-[10%] md:block hidden'>
+        <div className='w-full h-full p-8 gap-10 content-around flex flex-row'>
           <CustomButton name="My Bespoke Staff Marketing" tpx="40" icon={marketing} seperator={lineseperator} redirect="contactus"/>
           <CustomButton name="My Bespoke Staff Accounting" tpx="40" icon={accounting} seperator={lineseperator} redirect="contactus"/>
         </div>
@@ -45,7 +48,7 @@ const ParallaxHero = () => {
           <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
-      <UnStyledButton buttonStyle="m-8 xs:block hidden lg:hidden shadow-lg rounded-full p-4 bg-brandBlue text-white shadow-2xl" text="Contact Us!" redirect="contactus"/>
+
     </div>
   )
 }
