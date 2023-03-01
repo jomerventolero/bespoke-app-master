@@ -90,7 +90,7 @@ const ContactForm = () => {
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Name*" type="text" name="name" id="name" required/>
                 <div className="flex flex-col justify-between">
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Email Address*" type="text" name="email" id="email" required/>
-                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="text" name="phonenumber" id="phonenumber" required/>
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="number" name="phonenumber" id="phonenumber" required/>
                 </div>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
@@ -128,7 +128,7 @@ const ContactForm = () => {
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Name*" type="text" name="name" id="name" required/>
                 <div className="flex flex-row justify-between">
                     <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Email Address*" type="text" name="email" id="email" required/>
-                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="text" name="phonenumber" id="phonenumber" required/>
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="number" name="phonenumber" id="phonenumber" required/>
                 </div>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
                 <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
