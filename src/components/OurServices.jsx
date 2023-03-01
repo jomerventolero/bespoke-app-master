@@ -16,7 +16,7 @@ const OurServices = () => {
                 <h1 className={`text-brandBlack ${styles.textResH4} 
                 font-poppins font-semibold pl-4 py-4`}>Freight Forwarders</h1>
             </div>
-            <div className={`${styles.textResH2} flex justify-center px-[15%] pb-4`}>
+            <div className={`${styles.textResH4} flex justify-center px-[15%] pb-4`}>
                 <p>One of the main elements of how & why Freight Forwarding companies use BPO services lies in what BPO companies offer their clients. Listed below are some of the business processes that Bespoke can help you manage:</p>
             </div>
             <div className="flex flex-row">
