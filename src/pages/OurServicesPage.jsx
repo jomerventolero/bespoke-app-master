@@ -15,12 +15,12 @@ const OurServicesPage = () => {
             duration: 8.8,
             delay: 0.2,
             ease: [0, 0.71, 0.2, 1.01]
-          }}            
+          }}     
+          className="absolute top-[12%]"       
         >
           <OurServices />
+          <Footer />
         </motion.div>
-        
-        <Footer />
     </div>
   )
 }
