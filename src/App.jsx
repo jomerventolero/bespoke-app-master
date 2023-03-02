@@ -18,26 +18,25 @@ function App() {
         description="Bespoke is a full-service digital agency that helps businesses grow online. We are a team of passionate designers, developers, and marketers who are committed to delivering results."
         url="https://mybespokestaff.com/"
       />
-        <Navbar />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 5.8,
-            delay: 0.2,
-            ease: [0, 0.71, 0.2, 1.01]
-          }}  
-          className="absolute top-[10%] w-screen"
-        >
-          <ParallaxHero/>
-          <div className="px-[10%]">
-            <WhyChooseBespoke/>
-            <Testimonials />
-          </div>
-          <Footer />
-        </motion.div>
-        <WhatsAppFloatingButton />
-
+      <Navbar />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 5.8,
+          delay: 0.2,
+          ease: [0, 0.71, 0.2, 1.01]
+        }}  
+        className="absolute top-[10%] w-screen"
+      >
+        <ParallaxHero/>
+        <div className="px-[10%]">
+          <WhyChooseBespoke/>
+          <Testimonials />
+        </div>
+        <Footer />
+      </motion.div>
+      <WhatsAppFloatingButton />
     </div>
   )
 }
