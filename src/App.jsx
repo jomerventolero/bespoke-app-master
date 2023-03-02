@@ -7,11 +7,17 @@ import WhyChooseBespoke from './components/WhyChooseBespoke'
 import ParallaxHero from './components/ParallaxHero'
 
 import { motion } from 'framer-motion'
+import { SuperSEO } from "react-super-seo"
 
 function App() {
 
   return (
     <div className="bg-white">
+      <SuperSEO
+        title="Bespoke"
+        description="Bespoke is a full-service digital agency that helps businesses grow online. We are a team of passionate designers, developers, and marketers who are committed to delivering results."
+        url="https://mybespokestaff.com/"
+      />
         <Navbar />
         <motion.div
           initial={{ opacity: 0 }}
