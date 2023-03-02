@@ -7,7 +7,7 @@ const ContactUsPage = () => {
   return (
     <div>
       <Navbar />
-      <div className="absolute top-[10%]">
+      <div className="absolute top-[14%]">
         <ContactForm />
         <Footer />
       </div>

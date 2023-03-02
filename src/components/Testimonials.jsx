@@ -30,7 +30,7 @@ const AboutUs = () => {
             }}
         >
             <div className="flex flex-col pt-12 pl-5 max-w-[600px] w-800px pb-5">
-                <span className={`w-[3/4] h-3/4 ${styles.textRes2} pb-4`}>
+                <span className={`w-[3/4] h-3/4 ${styles.textRes2} pb-4 mx-2`}>
                     <br/>
                     With the constant advancements in technology, you can be sure the data we <br/>process for you is secured in our in-house dedicated server under lock and key <br/>with 24 hours surveillance monitoring.
                     <br/>
