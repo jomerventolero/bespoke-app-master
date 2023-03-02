@@ -66,7 +66,7 @@ const HowitWorks = () => {
             />
         </motion.div>
         <motion.div className="md:hidden flex flex-col px-[20%] pb-4 justify-center items-center overflow-hidden">
-            <motion.img src={one} alt="one" className="w-[40%] h-[20%]" 
+            <motion.img src={one} alt="one" className="w-[80%] h-[20%]" 
                 initial={{ opacity: 0, scale: 0.5 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{

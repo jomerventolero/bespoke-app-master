@@ -37,7 +37,7 @@ const AboutUs = () => {
                     <br/>
                     Our stringent measures that we have set in stone on all our Bespoke staff are<br/> implemented to the highest standard to prevent any data leak as we fully <br/>understand these sensitive data are proprietary to our customers only.
                 </span>
-                <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 hover:bg-brandBlack font-semibold font-poppins" redirect="contactus" />
+                <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 hover:bg-brandBlack font-semibold font-poppins mt-8" redirect="contactus" />
             </div>
             <div className='items-center flex justify-center'>
                 <img src={securityicon} alt="securityicon" className='lg:block hidden w-[150%] h-auto items-center'/>
