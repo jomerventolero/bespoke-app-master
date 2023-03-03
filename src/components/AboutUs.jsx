@@ -27,33 +27,33 @@ const AboutUs = () => {
             </span>    
         </motion.div>
         <div className="flex flex-row px-[10%]  py-4">
-            <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-500 rounded-l-lg xs:block hidden">
+            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-l-lg xs:block hidden">
             </div>
             <div className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE MISSION</h1>
                 <span className="px-[20%]">We work towards operating in a manner where our client's are satisfied that their business processes are met with the highest standard of service and effort by the top class talents that we hire.</span>
             </div>
-            <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-500 rounded-r-lg xs:block hidden">
+            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-r-lg xs:block hidden">
             </div>
         </div>
         <div className="flex flex-row px-[10%] py-4">
-        <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-500 rounded-l-lg xs:block hidden">
+        <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-400 rounded-l-lg xs:block hidden">
             </div>
             <div className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE VISION</h1>
                 <span className="px-[20%]">We believe in quality over quantity. Therefore we ensure that we get the best person to do the job right with no expense spared on the constant upgrade of workforce skills, technology and productivity.</span>
             </div>
-            <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-500 rounded-r-lg xs:block hidden">
+            <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-400 rounded-r-lg xs:block hidden">
             </div>
         </div>
             <div className="flex flex-row px-[10%] py-4">
-            <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-500 rounded-l-lg xs:block hidden">
+            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-l-lg xs:block hidden">
             </div>
             <div className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE CORE VALUES</h1>
                 <span className="px-[20%]">We strive to maintain our integrity whenever it comes to fairness in the workplace, stellar productivity on the services we provide and securing the data that we process on behalf of our customers.</span>
             </div>
-            <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-500 rounded-r-lg xs:block hidden">
+            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-r-lg xs:block hidden">
             </div>
         </div>
     </div>
