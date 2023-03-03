@@ -8,7 +8,7 @@ const Resources = () => {
   return (
     <section id="resources">
         <motion.div 
-          className="sm:flex flex-col gap-4 hidden"
+          className="lg:flex flex-col gap-4 hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
