@@ -1,29 +1,36 @@
 import { lazy } from 'react'
+import { Suspense } from 'react'
+import Loader from '../components/Loader'
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import styles from '../style'
+
+const Navbar = lazy(() => import('../components/Navbar'))
+const Footer = lazy(() => import('../components/Footer'))
+       
 import { motion } from 'framer-motion'
 
 const JobsPage = () => {
   return (
-    <div className="flex flex-col gap-4">
-        <Navbar />
-      <motion.div className={`absolute top-[15%]`}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ 
-              duration: 2.5,
-              delay: 0.5
-          }}
-      >
-      <h1 className="flex flex-col justify-center self-center align-center font-poppins font-bold ${styles.textResH1} text-brandBlue text-center py-[15%]">
-        Contact us at<br/>
-        employment@mybespokestaff.com
-      </h1>
-      <Footer/>
-      </motion.div>
-      
-    </div>
+    <Suspense fallback={<Loader />}>
+      <Navbar />
+      <div className="absolute top-[15%] flex flex-col gap-4 justify-center overflow-hidden w-full">
+        <motion.div className={``}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ 
+                duration: 2.5,
+                delay: 0.5
+            }}
+        >
+        <h1 className={`font-poppins font-bold ${styles.textResH1} text-brandBlue text-center py-[15%]`}>
+          Contact us at<br/>
+          employment@mybespokestaff.com
+        </h1>
+        
+        </motion.div>
+        <Footer/>
+      </div>
+    </Suspense>
   )
 }
 
