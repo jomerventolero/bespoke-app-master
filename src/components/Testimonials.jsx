@@ -19,7 +19,7 @@ const AboutUs = () => {
 
   return (
     <section id="testimonials" className='pt-8'>
-        <motion.div className="w-full h-full flex flex-row bg-gradient-to-b from-indigo-300 to-cyan-200 justify-center"
+        <motion.div className="flex flex-row justify-center w-full h-full bg-gradient-to-b from-indigo-300 to-cyan-200"
             isFocused={() => setIsFocused(true)}  
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -39,11 +39,11 @@ const AboutUs = () => {
                 </span>
                 <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 hover:bg-brandBlack font-semibold font-poppins mt-8" redirect="contactus" />
             </div>
-            <div className='items-center flex justify-center'>
+            <div className='flex items-center justify-center'>
                 <img src={securityicon} alt="securityicon" className='lg:block hidden w-[150%] h-auto items-center'/>
             </div>
         </motion.div>
-        <motion.div className="flex flex-col justify-center items-center px-10 py-2"
+        <motion.div className="flex flex-col items-center justify-center px-10 py-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ 
@@ -62,7 +62,7 @@ const AboutUs = () => {
                 <Card  image1={ leverage0 } text="Leverage your productivity to focus on what you need to the most"/>
                 <Card image0={ talent1 } image1={ talent0 } text="Widen Talent search"/>
             </div>
-            <div className="sm:hidden flex flex-col gap-6 pt-4">
+            <div className="flex flex-col gap-6 pt-4 sm:hidden">
                 <div className="flex flex-row gap-6">
                     <MobileCard image1={ kangarooaustralia } text="Australian reps at your beck and call" />
                     <MobileCard image1={ scale0 } text="Scale faster with efficiency" />
@@ -71,7 +71,7 @@ const AboutUs = () => {
                     <MobileCard image1={ cost0 } text="Reduce staffing cost" />
                     <MobileCard image1={ leverage0 } text="Leverage your productivity to focus on what you need to the most" />
                 </div>
-                <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-col items-center justify-center">
                     <MobileCard image1={ cost0 } text="Widen Talent search" />
                 </div>
             </div>
