@@ -1,10 +1,10 @@
 import logo from '../assets/logo.png'
-import { navLinks } from '../constants'
 import ContactUs from '../components/ContactUs'
 import styles from '../style'
+
 import { useState } from 'react'
 import { Cross as Hamburger } from 'hamburger-react'
-
+import { navLinks } from '../constants'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -35,7 +35,7 @@ const Navbar = () => {
 
         <div className='md:hidden flex flex-1 justify-end items-center '>
           <Hamburger toggled={ toggle } toggle={ setToggle } />
-          <div className={`${toggle ? 'flex' : 'hidden'} absolute float-right top-[12%] right-[-10px] bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
+          <div className={`${toggle ? 'flex' : 'hidden'} absolute float-right top-[100%] right-[10px] bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
             <ul className="flex flex-1 flex-col justify-end items-center  ">
               {navLinks.map((nav, index) => (
                 <li

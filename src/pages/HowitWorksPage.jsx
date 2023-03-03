@@ -1,15 +1,22 @@
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import HowitWorks from '../components/HowitWorks'
+import { lazy } from 'react'
+import { Suspense } from 'react'
+import Loader from '../components/Loader'
+
+const Navbar = lazy(() => import('../components/Navbar'))
+const HowitWorks = lazy(() => import('../components/HowitWorks'))
+const Footer = lazy(() => import('../components/Footer'))
+
 
 export default function() {
     return(
-        <div>
-            <Navbar/>
-            <div className="absolute top-[12%]">
-                <HowitWorks/>
-                <Footer/>
+        <Suspense fallback={<Loader/>}>
+            <div>
+                <Navbar/>
+                <div className="absolute top-[12%]">
+                    <HowitWorks/>
+                    <Footer/>
+                </div>
             </div>
-        </div>
+        </Suspense>
     )
 }
