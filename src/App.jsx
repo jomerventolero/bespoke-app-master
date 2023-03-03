@@ -1,3 +1,4 @@
+import Loader from './components/Loader'
 import React from 'react'
 
 import { lazy } from 'react'
@@ -13,7 +14,7 @@ const WhatsAppFloatingButton = lazy(() => import('./components/WhatsAppFloatingB
 import { motion } from 'framer-motion'
 import { SuperSEO } from "react-super-seo"
 
-import Loader from './components/Loader'
+
 
 function App() {
 
