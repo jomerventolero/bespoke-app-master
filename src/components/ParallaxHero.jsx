@@ -7,13 +7,20 @@ import customer from '../assets/Icons/customersupport.png'
 import dataentry from '../assets/Icons/dataentry.png'
 import video from '../assets/video.mp4'
 import videowebm from '../assets/video.webm'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
+
+
 
 const ParallaxHero = () => {
+  const ref = useRef()
+  const isInView = useInView(ref, { once: true })
+
   return (
     <div className="top-[-25%] flex flex-col justify-center items-center w-screen overflow-hidden">
       <div className="flex overflow-hidden text-white font-bold">
+        
         <div className={`flex flex-row items-center z-10`}>
-          
           <div className='absolute -left-0 flex flex-col justify-center pl-12'>
             <h1 className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-brandBlack pr-4 pt-8 drop-shadow-2xl`}>
               "WE TAKE THE {" "}<br className="sm:block hidden"/>
@@ -28,12 +35,21 @@ const ParallaxHero = () => {
             </a>
           </div>
         </div>
-        <video loop autoPlay muted playsInLine className="object-cover aspect-video w-screen z-0">
-          <source src={ videowebm } type="video/webm"/>
-          <source src={ video } type="video/mp4"/>
-        </video>
+        <div className="bg-fixed">
+          <video loop autoPlay muted playsInLine className="object-cover aspect-video w-screen z-0">
+            <source src={ videowebm } type="video/webm"/>
+            <source src={ video } type="video/mp4"/>
+          </video>
+        </div>
       </div>
-      <div className=' px-[10%] md:block hidden'>
+
+      <div ref={ref} className=' px-[10%] md:block hidden'
+        style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }}
+      >
         <div className='w-full h-full p-8 gap-10 content-around flex flex-row'>
           <CustomButton name="My Bespoke Staff Marketing" tpx="40" icon={marketing} seperator={lineseperator} redirect="contactus"/>
           <CustomButton name="My Bespoke Staff Accounting" tpx="40" icon={accounting} seperator={lineseperator} redirect="contactus"/>

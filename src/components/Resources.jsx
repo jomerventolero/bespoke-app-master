@@ -26,7 +26,7 @@ const Resources = () => {
                 <p className={`text-white ${styles.textResHeadings} text-justify pb-2`}>
                   Freight forwarding companies specialize in managing and executing the flow of goods from one destination to another and act as an intermediary between shipper and transporter. This leads many to consider how & why freight forwarding companies...
                 </p>
-                <a href="/" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
+                <a href="/whydofreightforwardingcompaniesusebposervices" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
               </blockquote>
             </div>
           </figure>
@@ -41,7 +41,7 @@ const Resources = () => {
                 <p className={`text-white ${styles.textResHeadings} text-justify pb-2`}>
                   Learn why choosing Bespoke as your offshore outsourcing partner makes business sense for you. Unlike the majority of off shore companies that offer outsourcing services, we have an Australian office and Australian executive staff...
                 </p>
-                <a href="/" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
+                <a href="/whyshouldyouchoosetohireabespokestaff" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
               </blockquote>
             </div>
           </figure> 
@@ -68,7 +68,7 @@ const Resources = () => {
                 <p className={`text-white ${styles.textResHeadings} text-justify pb-2`}>
                   Freight forwarding companies specialize in managing and executing the flow of goods from one destination to another and act as an intermediary between shipper and transporter. This leads many to consider how & why freight forwarding companies...
                 </p>
-                <a href="/" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
+                <a href="/whydofreightforwardingcompaniesusebposervices" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
               </blockquote>
             </div>
           </figure>
@@ -83,7 +83,7 @@ const Resources = () => {
                 <p className={`text-white ${styles.textResHeadings} text-justify pb-2`}>
                   Learn why choosing Bespoke as your offshore outsourcing partner makes business sense for you. Unlike the majority of off shore companies that offer outsourcing services, we have an Australian office and Australian executive staff...
                 </p>
-                <a href="/" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
+                <a href="/whyshouldyouchoosetohireabespokestaff" className={`text-white font-poppins ${styles.textResH3}`}>Read more...</a>
               </blockquote>
             </div>
           </figure> 

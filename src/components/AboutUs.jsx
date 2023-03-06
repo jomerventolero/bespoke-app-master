@@ -3,6 +3,9 @@ import aboutus from '../assets/aboutus.png'
 import aboutusmobile from '../assets/aboutusmobile.png'
 import aboutusmobile1 from '../assets/aboutusmobile1.png'
 import { motion } from 'framer-motion'
+import bespokemission from '../assets/aboutus/1.png'
+import bespokevision from '../assets/aboutus/2.png'
+import bespokevalues from '../assets/aboutus/3.png'
 
 const AboutUs = () => {
   return (
@@ -26,34 +29,25 @@ const AboutUs = () => {
             Bespoke is led by a team of professionals that have at least 20 years combined experience in the freight forwarding industry in Australia. We are well versed with the importation and exportation requirements that are unique to Australia. Be it the rules and regulations of AQIS (Australian Quarantine and Inspection Scheme) or the daily operations of the various departments such as the operations / forwarding team to the cartage department and the customs broker department, we have done it all. Do drop us a quick enquiry of how we can be of service to you on your staffing requirements. We are certain we would even be able to advise you on building a team of staff that can generate more income for your business that you didn't know you needed.
             </span>    
         </motion.div>
-        <div className="flex flex-row px-[10%]  py-4">
-            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-l-lg xs:block hidden">
-            </div>
+        <div className="flex flex-row px-[10%] py-4">
+            <img src={bespokemission} draggable={false} alt="bespokemission" className="md:block hidden"/>
             <div className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE MISSION</h1>
                 <span className="px-[20%]">We work towards operating in a manner where our client's are satisfied that their business processes are met with the highest standard of service and effort by the top class talents that we hire.</span>
             </div>
-            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-r-lg xs:block hidden">
-            </div>
         </div>
         <div className="flex flex-row px-[10%] py-4">
-        <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-400 rounded-l-lg xs:block hidden">
-            </div>
             <div className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE VISION</h1>
                 <span className="px-[20%]">We believe in quality over quantity. Therefore we ensure that we get the best person to do the job right with no expense spared on the constant upgrade of workforce skills, technology and productivity.</span>
             </div>
-            <div className="w-[480px] h-[300px] bg-gradient-to-t from-indigo-500 to-blue-400 rounded-r-lg xs:block hidden">
-            </div>
+            <img src={bespokevision} draggable={false} alt="bespokevision" className="md:block hidden"/>
         </div>
             <div className="flex flex-row px-[10%] py-4">
-            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-l-lg xs:block hidden">
-            </div>
+            <img src={bespokevalues} draggable={false} alt="bespokevalues" className="md:block hidden"/>
             <div className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE CORE VALUES</h1>
                 <span className="px-[20%]">We strive to maintain our integrity whenever it comes to fairness in the workplace, stellar productivity on the services we provide and securing the data that we process on behalf of our customers.</span>
-            </div>
-            <div className="w-[480px] h-[300px] bg-gradient-to-b from-indigo-500 to-blue-400 rounded-r-lg xs:block hidden">
             </div>
         </div>
     </div>

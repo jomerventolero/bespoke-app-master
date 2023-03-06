@@ -15,6 +15,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
+import WhyDoFreightPage from "./pages/WhyDoFreightPage"
+import WhyShouldYouPage from "./pages/WhyShouldYouPage"
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,14 @@ const router = createBrowserRouter([
   {
     path: "/jobs",
     element: <JobsPage />
+  },
+  {
+    path: "/whydofreightforwardingcompaniesusebposervices",
+    element: <WhyDoFreightPage />
+  },
+  {
+    path: "/whyshouldyouchoosetohireabespokestaff",
+    element: <WhyShouldYouPage />
   },
   {
     path: "*",
