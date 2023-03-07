@@ -2,7 +2,7 @@ import React from 'react'
 import api from '../api/api'
 
 const APICall = () => {
-    console.log(api)
+  console.log(api.data)
 
   return (
     <div>APICall</div>
