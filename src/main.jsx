@@ -9,6 +9,8 @@ import ResourcesPage from './pages/ResourcesPage'
 import TestimonialsPage from './pages/TestimonialsPage'
 import JobsPage from "./pages/JobsPage"
 import ErrorPage from "./pages/ErrorPage"
+import ApplicantDetails from './components/ApplicantDetails'
+import APICall from './components/APICall'
 
 import {
   createBrowserRouter,
@@ -62,6 +64,14 @@ const router = createBrowserRouter([
   {
     path: "*",
     element: <ErrorPage />
+  },
+  {
+    path: "/applicant",
+    element: <ApplicantDetails />
+  },
+  {
+    path: "/api",
+    element: <APICall />
   }
 ]);
 
