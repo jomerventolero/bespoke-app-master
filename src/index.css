@@ -5,6 +5,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  --red: #ff0055;
+  --blue: #6b58fd;
+}
+
+
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
@@ -182,4 +190,14 @@
 
 .carousel-control--next {
   right: 0;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 105px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--blue);
+  transform-origin: 0%;
 }

@@ -6,11 +6,15 @@ import { useState } from 'react'
 import { Cross as Hamburger } from 'hamburger-react'
 import { navLinks } from '../constants'
 
+import { motion, useScroll } from 'framer-motion'
+
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
+  const { scrollYProgress } = useScroll()
 
   return (
     <nav className={`z-50 fixed w-full bg-white top-0 flex shadow-xl py-1 px-6 justify-start items-center navbar`}>
+        
         <a href='/'>
             <img src={ logo } alt="logo" className={`object-contain block w-[35%] cursor-pointer ${toggle ? 'w-[100px]' : 'w-[35%]'}`}/>
         </a>
@@ -52,7 +56,7 @@ const Navbar = () => {
             
           </div>
       </div>
-        
+      <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
     </nav>
   )
 }
