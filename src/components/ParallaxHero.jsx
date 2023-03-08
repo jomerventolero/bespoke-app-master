@@ -5,6 +5,7 @@ import accounting from '../assets/Icons/accounting.png'
 import lineseperator from '../assets/Icons/lineseperator.png'
 import customer from '../assets/Icons/customersupport.png'
 import dataentry from '../assets/Icons/dataentry.png'
+import frontbackoffice from '../assets/Icons/frontbackoffice.png'
 import video from '../assets/video.mp4'
 import videowebm from '../assets/video.webm'
 import { useInView } from 'framer-motion'
@@ -59,7 +60,7 @@ const ParallaxHero = () => {
           <CustomButton name="My Bespoke Staff Data Entry" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
         <div className='items-center justify-center self-center p-6 flex pt-2'>
-          <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
+          <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={frontbackoffice} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
 
