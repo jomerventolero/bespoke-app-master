@@ -38,6 +38,7 @@ const Navbar = () => {
         </div>
 
         <div className='md:hidden flex flex-1 justify-end items-center '>
+          <a href="/contactus" className="text-brandBlack hover:text-brandBlue font-poppins font-semibold pr-8 text-right align-center">Contact Us</a>
           <Hamburger toggled={ toggle } toggle={ setToggle } />
           <div className={`${toggle ? 'flex' : 'hidden'} absolute float-right top-[100%] right-[10px] bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
             <ul className="flex flex-1 flex-col justify-end items-center  ">

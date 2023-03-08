@@ -9,6 +9,9 @@ const WhyChooseBespoke = () => {
         <span className={`${styles.textResHeadline} text-brandBlack`}>BESPOKE?</span>
       </div>
       <img src={bespokeProfile} alt="Bespoke" draggable="false" className="w-screen"/>
+      <div className={`bg-gradient-to-t from-blue-400 to-indigo-400 w-auto h-auto justify-center py-8 sm:flex hidden`}>
+        <a href="/contactus" className={`bg-brandBlack hover:bg-brandBlue text-center text-white rounded-[50px] w-[15%] h-[80%] my-2 py-4`}>Contact Us</a>
+      </div>
     </div>
   )
 }
