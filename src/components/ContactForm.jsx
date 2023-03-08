@@ -32,7 +32,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contactus">
+    <section id="contactus" className="">
     <motion.div className={`${!isSubmitted ? "hidden" : "flex text-[45px] text-center text-brandBlue font-bold justify-center"}`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -80,9 +80,9 @@ const ContactForm = () => {
                 duration: 0.8,
                 delay: 0.5
             }}
-            className="flex lg:hidden"
+            className="flex lg:hidden justify-center px-8"
         >
-        <form ref={ form } className={`flex flex-col px-8 }`} onSubmit={ sendEmail }>
+        <form ref={ form } className={`flex flex-col px-8 pt-2 shadow-2xl rounded-2xl`} onSubmit={ sendEmail }>
             <div className='flex flex-col'>
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
                 <span>Talk to us.</span>
@@ -118,20 +118,20 @@ const ContactForm = () => {
                 duration: 0.8,
                 delay: 0.5
             }}
-            className="lg:flex hidden"
+            className="lg:flex hidden pl-8"
         >
-        <form ref={ form } className={`flex flex-col px-8 }`} onSubmit={ sendEmail }>
+        <form ref={ form } className={`flex flex-col px-8 pt-3 shadow-2xl rounded-2xl`} onSubmit={ sendEmail }>
             <div className='flex flex-col'>
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
                 <span>Talk to us.</span>
                 <h5>You are just a form away. </h5>
-                <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Name*" type="text" name="name" id="name" required/>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue active:border-brandBlue" placeholder="Name*" type="text" name="name" id="name" required/>
                 <div className="flex flex-row justify-between">
-                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Email Address*" type="text" name="email" id="email" required/>
-                    <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Phone Number*" type="number" name="phonenumber" id="phonenumber" required/>
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Email Address*" type="text" name="email" id="email" required/>
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Phone Number*" type="tel"  pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" min="11" max="12" name="phonenumber" id="phonenumber" required/>
                 </div>
-                <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
-                <input className="border-b-2 border-slate-300 pt-4 outline-none" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
                 <ReCAPTCHA 
                     sitekey="6LcR9J0kAAAAACY17CRtBE0KQdrQN8TqJFTBSnT1"
                     onChange={ handleVerify }

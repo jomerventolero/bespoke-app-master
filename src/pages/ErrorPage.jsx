@@ -16,7 +16,7 @@ const ErrorPage = () => {
                 delay: 0.2
             }}
         >
-            <img src={ errorPage } alt="404" className='w-full h-full'/>
+            <img src={ errorPage } draggable="false" alt="404" className='w-full h-full'/>
         </motion.div>
         <Footer/>
     </div>
