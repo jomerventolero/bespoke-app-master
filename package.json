@@ -4,7 +4,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "author": "Jomer Augustin Ventolero <jomer.it@mybespokestaff.com>",
+  "author": "Jomer Augustin Ventolero",
+  "email": "jomer.it@mybespokestaff.com",
   "license": "MIT",
   "scripts": {
     "dev": "vite",
