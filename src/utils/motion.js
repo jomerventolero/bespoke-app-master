@@ -1,3 +1,11 @@
+/* 
+  This is a module that exports various animation variants and functions for use in a React
+  application. These animations can be used to create dynamic and engaging user interfaces. The
+  exported objects include variants for animating navigation bars, text, images, and footers, as well
+  as functions for creating staggered animations and zooming effects. These animations are defined
+  using the Framer Motion library, which provides a simple and intuitive API for creating complex
+  animations. 
+*/
 export const navVariants = {
   hidden: {
     opacity: 0,
