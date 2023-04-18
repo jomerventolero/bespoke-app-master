@@ -1,3 +1,4 @@
+/* These are import statements in a React component file. */
 import Loader from './components/Loader'
 import React from 'react'
 
@@ -9,12 +10,17 @@ const ParallaxHero = lazy(() => import('./components/ParallaxHero'))
 const WhyChooseBespoke = lazy(() => import('./components/WhyChooseBespoke'))
 const Testimonials = lazy(() => import('./components/Testimonials'))
 const Footer = lazy(() => import('./components/Footer'))
-const WhatsAppFloatingButton = lazy(() => import('./components/WhatsAppFloatingButton'))
 
-import { motion } from 'framer-motion'
 import { SuperSEO } from "react-super-seo"
 
 
+/* This is a React functional component named `App` that returns JSX code. It includes several other
+React components such as `Loader`, `Navbar`, `ParallaxHero`, `WhyChooseBespoke`, `Testimonials`,
+`Footer`, and `WhatsAppFloatingButton`. It also includes a `SuperSEO` component that provides
+metadata for search engine optimization. The `Suspense` component is used to handle asynchronous
+loading of the other components, and the `motion` component is used for animation. The JSX code is
+wrapped in parentheses and returned by the `App` function. Finally, the `App` component is exported
+as the default export of the module. */
 
 function App() {
 
@@ -27,14 +33,7 @@ function App() {
           url="https://www.mybespokestaff.com/"
         />
         <Navbar />
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 5.8,
-            delay: 0.2,
-            ease: [0, 0.71, 0.2, 1.01]
-          }}  
+        <div
           className="absolute top-[10%] w-screen"
         >
           <ParallaxHero/>
@@ -43,8 +42,7 @@ function App() {
             <Testimonials />
           </div>
           <Footer />
-        </motion.div>
-        <WhatsAppFloatingButton />
+        </div>
       </div>
     </Suspense>
   )
