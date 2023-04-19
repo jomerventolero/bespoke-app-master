@@ -26,7 +26,6 @@ const JobsPage = () => {
           Contact us at<br/>
           employment@mybespokestaff.com
         </h1>
-        
         </motion.div>
         <Footer/>
       </div>
