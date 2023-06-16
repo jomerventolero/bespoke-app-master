@@ -6,7 +6,7 @@ const ResourcesPage = () => {
   return (
     <div>
       <Navbar/>
-      <div className="absolute top-[15%]">
+      <div className="absolute top-[20%]">
         <Resources/>
         <Footer/>
       </div>
