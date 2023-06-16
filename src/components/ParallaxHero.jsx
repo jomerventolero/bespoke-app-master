@@ -24,9 +24,9 @@ const ParallaxHero = () => {
         <div className={`flex flex-row items-center z-10`}>
           <div className='absolute -left-0 flex flex-col justify-center pl-12'>
             <motion.h1 
-              initial={{ x: "-50vw" }}
-              animate={{ x: 0 }}
-              transition={{ type: "spring", stiffness: 80 }}
+              initial={{ opacity: 0, x: "-50vw" }}
+              animate={{ opacity: 1 , x: 0 }}
+              transition={{ type: "fade", stiffness: 40, duration: 1.5, delay: 0.3 }}
               className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-brandBlack pr-4 pt-8 drop-shadow-2xl`}>
               "WE TAKE THE {" "}<br className="sm:block hidden"/>
               <span className="text-brandBlue text-gradient">COMPLICATED</span> {" "} OUT OF <br />
