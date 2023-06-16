@@ -5,11 +5,13 @@ import styles from '../style'
 const CustomButton = ({ name, icon, seperator, redirect}) => {
   return (
     <motion.div 
-      initial = {{ opacity: 0 }}
-      animate = {{ opacity: 1 }}
+      initial = {{ opacity: 0, scale: 0.5 }}
+      animate = {{ opacity: 1, scale: 1 }}
       transition = {{ 
+        type: 'fade',
         duration: 1.5,
-        delay: 0.4
+        delay: 0.4,
+      
        }}
 
       className="w-[50%] rounded-full bg-brandBlack hover:bg-brandBlue pr-2 pl-2">
