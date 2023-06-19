@@ -35,7 +35,7 @@ const Footer = () =>  {
                 <p className={`${styles.textResH4} font-semibold`}>
                     info@mybespokestaff.com
                 </p>
-                <h2 className={`text-brandBlue font-semibold ${styles.textResH4} pt-8`}>
+                <h2 className={`text-brandBlue font-bold ${styles.textResH4} pt-8`}>
                     COMPANY ADDRESS
                 </h2>
                 <a href="https://www.google.com/maps/place/King's+Court+Building+1,+Chino+Roces+Ave,+Legazpi+Village,+Makati,+Metro+Manila/@14.5576121,121.0109105,17z/data=!3m1!4b1!4m6!3m5!1s0x3397c90cf6209dbb:0x4cad4f9d0aaefd8b!8m2!3d14.5576121!4d121.0134854!16s%2Fg%2F12hphv4lk?entry=ttu" 
@@ -45,7 +45,7 @@ const Footer = () =>  {
                 </a>
             </div>
             <div className={`${styles.textResH4} xs:px-2 px-4`}>
-                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH4} mb-2`}>
+                <h2 className={`text-brandBlue font-poppins font-bold ${styles.textResH4} mb-2`}>
                     QUICK LINKS
                 </h2>
                 
@@ -63,7 +63,7 @@ const Footer = () =>  {
                 </ul>
             </div>
             <div className={`${styles.textResH4} px-8 xs:block hidden`}>
-                <h2 className={`text-brandBlue font-poppins font-semibold ${styles.textResH4}`}>
+                <h2 className={`text-brandBlue font-poppins font-bold ${styles.textResH4}`}>
                     SITE TOOLS
                 </h2>
                 <ul>
