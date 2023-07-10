@@ -25,6 +25,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-icons": "^4.7.1",
     "react-intersection-observer": "^9.4.3",
+    "react-optimized-image": "^0.4.1",
     "react-router-dom": "^6.8.1",
     "react-slick": "^0.29.0",
     "react-super-seo": "^1.1.3",
