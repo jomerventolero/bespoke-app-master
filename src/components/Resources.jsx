@@ -46,7 +46,7 @@ const Resources = () => {
             </div>
           </figure> 
         </motion.div>
-
+          
 
 
         <motion.div 
