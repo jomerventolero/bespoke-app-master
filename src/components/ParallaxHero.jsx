@@ -8,14 +8,12 @@ import dataentry from '../assets/Icons/dataentry.png'
 import frontbackoffice from '../assets/Icons/frontbackoffice.png'
 import video from '../assets/video.mp4'
 import videowebm from '../assets/video.webm'
-import { useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { motion } from 'framer-motion'
 
 
 const ParallaxHero = () => {
   const ref = useRef()
-  const isInView = useInView(ref, { once: true })
 
   return (
     <div className="top-[-25%] flex flex-col justify-center items-center w-screen overflow-hidden">
