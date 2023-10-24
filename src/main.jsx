@@ -9,7 +9,6 @@ import ResourcesPage from './pages/ResourcesPage'
 import TestimonialsPage from './pages/TestimonialsPage'
 import JobsPage from "./pages/JobsPage"
 import ErrorPage from "./pages/ErrorPage"
-import SignUp from "./components/authentication/SignUp"
 
 
 import {
@@ -60,10 +59,6 @@ const router = createBrowserRouter([
   {
     path: "/whyshouldyouchoosetohireabespokestaff",
     element: <WhyShouldYouPage />
-  },
-  {
-    path: "/signup",
-    element: <SignUp />
   },
   {
     path: "*",

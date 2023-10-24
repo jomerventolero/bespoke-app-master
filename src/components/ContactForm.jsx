@@ -83,7 +83,7 @@ const ContactForm = () => {
             }}
             className="flex lg:hidden justify-center px-8"
         >
-        <form ref={ form } className={`flex flex-col px-8 pt-2 shadow-2xl rounded-2xl`} onSubmit={ sendEmail }>
+        <form ref={ form } className={`flex flex-col px-8 pt-2 shadow-2xl rounded-2xl transition-all ease-in-out duration-300`} onSubmit={ sendEmail }>
             <div className='flex flex-col'>
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
                 <span>Talk to us.</span>
@@ -126,13 +126,13 @@ const ContactForm = () => {
                 <span className="text-brandBlue font-semibold text-[35px]">Explore More about our Services.</span>
                 <span>Talk to us.</span>
                 <h5>You are just a form away. </h5>
-                <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue active:border-brandBlue" placeholder="Name*" type="text" name="name" id="name" required/>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none transition-all ease-in-out duration-300 hover:border-brandBlue active:border-brandBlue" placeholder="Name*" type="text" name="name" id="name" required/>
                 <div className="flex flex-row justify-between">
-                    <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Email Address*" type="text" name="email" id="email" required/>
-                    <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Phone Number*" type="tel"   min="11" max="12" name="phonenumber" id="phonenumber" required/>
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none transition-all ease-in-out duration-300 hover:border-brandBlue" placeholder="Email Address*" type="text" name="email" id="email" required/>
+                    <input className="border-b-2 border-slate-300 pt-4 outline-none transition-all ease-in-out duration-300 hover:border-brandBlue" placeholder="Phone Number*" type="tel"   min="11" max="12" name="phonenumber" id="phonenumber" required/>
                 </div>
-                <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
-                <input className="border-b-2 border-slate-300 pt-4 outline-none hover:border-brandBlue" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none transition-all ease-in-out duration-300 hover:border-brandBlue" placeholder="Company Name*" type="text" name="companyname" id="companyname" required/>
+                <input className="border-b-2 border-slate-300 pt-4 outline-none transition-all ease-in-out duration-300 hover:border-brandBlue" placeholder="Tell us about your requirement" type="text" name="requirement" id="requirement" required/>
                 <ReCAPTCHA 
                     sitekey="6LcR9J0kAAAAACY17CRtBE0KQdrQN8TqJFTBSnT1"
                     onChange={ handleVerify }
