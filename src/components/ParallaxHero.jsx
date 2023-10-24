@@ -28,9 +28,9 @@ const ParallaxHero = () => {
               animate={{ opacity: 1 , y: 0 }}
               transition={{ duration: 1, delay: 0.7 }}
               className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-brandBlack pr-4 pt-8 drop-shadow-2xl`}>
-              "WE TAKE THE {" "}<br className="sm:block hidden"/>
+              WE TAKE THE {" "}<br className="sm:block hidden"/>
               <span className="text-brandBlue text-gradient">COMPLICATED</span> {" "} OUT OF <br />
-              YOUR OUTSOURCING NEEDS!"
+              YOUR OUTSOURCING NEEDS!
             </motion.h1>
             <motion.a 
               initial={{ opacity: 0, y: "10vw" }}
@@ -53,11 +53,7 @@ const ParallaxHero = () => {
       </div>
 
       <div ref={ref} className=' px-[10%] md:block hidden'
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
-        }}
+        
       >
         <div className='w-full h-full p-8 gap-10 content-around flex flex-row'>
           <CustomButton name="My Bespoke Staff Marketing" tpx="40" icon={marketing} seperator={lineseperator} redirect="contactus"/>

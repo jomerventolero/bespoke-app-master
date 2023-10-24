@@ -2,7 +2,6 @@ import { lazy } from 'react'
 import { Suspense } from 'react'
 import Loader from '../components/Loader'
 
-import styles from '../style'
 
 const Navbar = lazy(() => import('../components/Navbar'))
 const Footer = lazy(() => import('../components/Footer'))
@@ -10,11 +9,12 @@ const Footer = lazy(() => import('../components/Footer'))
 import { motion } from 'framer-motion'
 
 const JobsPage = () => {
+
   return (
     <Suspense fallback={<Loader />}>
       <Navbar />
       <div className="absolute top-[15%] flex flex-col gap-4 justify-center overflow-hidden w-full">
-        <motion.div className={``}
+        <motion.div className={`flex justify-center py-52 bg-officebg bg-cover`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ 
@@ -22,10 +22,7 @@ const JobsPage = () => {
                 delay: 0.5
             }}
         >
-        <h1 className={`font-poppins font-bold ${styles.textResH1} text-brandBlue text-center py-[15%]`}>
-          Contact us at<br/>
-          employment@mybespokestaff.com
-        </h1>
+        <button onClick={() => {window.location.href = 'https://odoo.mybespokestaff.com/jobs'}} className="font-poppins text-center font-semibold text-3xl text-brandBlue p-5 rounded-full shadow-2xl bg-white hover:bg-brandBlue hover:text-white transition-colors ease-in-out duration-300">Go to Jobs Page 🏢</button>
         </motion.div>
         <Footer/>
       </div>

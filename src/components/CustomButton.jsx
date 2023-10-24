@@ -5,12 +5,12 @@ import styles from '../style'
 const CustomButton = ({ name, icon, seperator, redirect}) => {
   return (
     <motion.div 
-      initial = {{ opacity: 0, scale: 0.5 }}
-      animate = {{ opacity: 1, scale: 1 }}
+      initial = {{ opacity: 0 }}
+      whileInView = {{ opacity: 1 }}
       transition = {{ 
-        type: 'fade',
-        duration: 1.5,
-        delay: 0.4,
+        type: 'fadeIn',
+        duration: 0.8,
+        delay: 0.2,
       
        }}
 

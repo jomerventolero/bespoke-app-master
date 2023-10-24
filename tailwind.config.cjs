@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx,css}"],
+  content: ["./index.html", "./src/**/*.{js,jsx,css}", "./src/**/**/*.{js,jsx,css}"],
   mode: "jit",
   theme: {
     extend: {
@@ -24,7 +24,8 @@ module.exports = {
         xl: "18px",
       },
       backgroundImage: {
-        "background": "url('src/assets/mainherosection.png')"
+        "background": "url('src/assets/mainherosection.png')", 
+        "officebg": "url('src/assets/officebg.jpg')",
       }
     },
     screens: {
