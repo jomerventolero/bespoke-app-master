@@ -17,7 +17,6 @@ const AboutUs = () => {
                 duration: 1.8,
                 delay: 0.5,
             }}
-            
             className="flex flex-col justify-center">
             <img src={ aboutus } draggable={false} alt="aboutus" className="sm:block hidden w-auto h-auto"/>
             <img src={ aboutusmobile } draggable={false} alt="aboutus-mobile" className="sm:hidden w-auto h-auto"/>
@@ -30,25 +29,73 @@ const AboutUs = () => {
             </span>    
         </motion.div>
         <div className="flex flex-row px-[10%] py-4">
-            <img src={bespokemission} draggable={false} alt="bespokemission" className="md:block hidden"/>
-            <div className="flex flex-col justify-center text-center">
+            <motion.img 
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 1.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                src={bespokemission} draggable={false} alt="bespokemission" className="md:block hidden"/>
+            <motion.div 
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 1.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE MISSION</h1>
                 <span className="px-[20%]">We work towards operating in a manner where our client's are satisfied that their business processes are met with the highest standard of service and effort by the top class talents that we hire.</span>
-            </div>
+            </motion.div>
         </div>
         <div className="flex flex-row px-[10%] py-4">
-            <div className="flex flex-col justify-center text-center">
+            <motion.div 
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 1.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE VISION</h1>
                 <span className="px-[20%]">We believe in quality over quantity. Therefore we ensure that we get the best person to do the job right with no expense spared on the constant upgrade of workforce skills, technology and productivity.</span>
-            </div>
-            <img src={bespokevision} draggable={false} alt="bespokevision" className="md:block hidden"/>
+            </motion.div>
+            <motion.img 
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 1.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                src={bespokevision} draggable={false} alt="bespokevision" className="md:block hidden"/>
         </div>
             <div className="flex flex-row px-[10%] py-4">
-            <img src={bespokevalues} draggable={false} alt="bespokevalues" className="md:block hidden"/>
-            <div className="flex flex-col justify-center text-center">
+            <motion.img 
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 1.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                src={bespokevalues} draggable={false} alt="bespokevalues" className="md:block hidden"/>
+            <motion.div 
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{
+                    duration: 1.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                className="flex flex-col justify-center text-center">
                 <h1 className="font-poppins font-semibold text-brandBlue text-[30px] py-2">BESPOKE CORE VALUES</h1>
                 <span className="px-[20%]">We strive to maintain our integrity whenever it comes to fairness in the workplace, stellar productivity on the services we provide and securing the data that we process on behalf of our customers.</span>
-            </div>
+            </motion.div>
         </div>
     </div>
   )

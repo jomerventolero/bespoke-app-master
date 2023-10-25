@@ -25,7 +25,7 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={middlemen} alt="middlemen" draggable="false" className="rounded-xl"/>
+          <img src={middlemen} alt="middlemen" draggable="false" className="rounded-xl shadow-2xl drop-shadow-2xl"/>
         </motion.div>
         <motion.div
           className="flex flex-col justify-center"
@@ -71,7 +71,7 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={speaking} alt="image" draggable="false" className="rounded-xl"/>
+          <img src={speaking} alt="image" draggable="false" className="rounded-xl shadow-2xl drop-shadow-2xl"/>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -83,7 +83,7 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={containers} alt="image" draggable="false" className="rounded-xl"/>
+          <img src={containers} alt="image" draggable="false" className="rounded-xl shadow-2xl drop-shadow-2xl"/>
         </motion.div>
         <motion.div
           className="flex flex-col justify-center"

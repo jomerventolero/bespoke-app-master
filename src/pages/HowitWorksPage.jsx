@@ -12,7 +12,7 @@ export default function() {
         <Suspense fallback={<Loader/>}>
             <div>
                 <Navbar/>
-                <div className="absolute top-[12%]">
+                <div className="absolute top-[15%]">
                     <HowitWorks/>
                     <Footer/>
                 </div>

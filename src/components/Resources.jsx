@@ -17,9 +17,9 @@ const Resources = () => {
           }}
           >
          <figure className="flex-row bg-gradient-to-t from-indigo-400 to-blue-300 mx-[10%] z-60 rounded-lg sm:flex hidden">
-            <img src={ resources1 } alt="resources1" className="w-1/2 h-fit mx-auto rounded-l-lg"/>
+            <img src={ resources1 } alt="resources1" className="w-3/4 mx-auto rounded-l-lg"/>
             <div className="xs:flex row">
-              <blockquote className={`px-[10%] pt-[5%]`}>
+              <blockquote className={`px-[10%] py-5`}>
                 <h1 className={`${styles.textResH2} font-poppins font-semibold text-brandBlack pb-6`}>
                   WHY DO FREIGHT FORWARDING COMPANIES USE BPO SERVICES?
                 </h1>
@@ -32,9 +32,9 @@ const Resources = () => {
           </figure>
 
           <figure className="flex-row bg-gradient-to-t from-indigo-400 to-blue-300 mx-[10%] rounded-lg h-full sm:flex hidden">
-            <img src={ resources2 } alt="resources2" className="w-1/2 h-fit mx-auto rounded-l-lg"/>
+            <img src={ resources2 } alt="resources2" className="w-3/4 mx-auto rounded-l-lg"/>
             <div className="">
-              <blockquote className={`px-[10%] pt-[5%]`}>
+              <blockquote className={`px-[10%] py-5`}>
                 <h1 className={`${styles.textResH2} font-poppins font-semibold text-brandBlack pb-6`}>
                 WHY SHOULD YOU CHOOSE TO HIRE A BESPOKE STAFF?
                 </h1>

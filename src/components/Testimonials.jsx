@@ -21,38 +21,47 @@ const Testimonials = () => {
     <section id="testimonials" className='pt-8'>
         <motion.div className="flex flex-row justify-center w-full h-full bg-gradient-to-b from-indigo-300 to-cyan-200 rounded-xl shadow-2xl drop-shadow-2xl"
             isFocused={() => setIsFocused(true)}  
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ 
-                duration: 5.5,
-                delay: 0.2,
+                duration: 0.8,
+                delay: 0.5,
                 ease: [0, 0.71, 0.2, 1.01]
             }}
         >
-            <div className="flex flex-col pt-12 pl-5 max-w-[600px] w-800px pb-5">
+            <motion.div 
+                initial={{ opacity: 0,  }}
+                whileInView={{ opacity: 1  }}
+                transition={{
+                    type: "fadeIn",
+                    delay: 0.8,
+                    duration: 1.0,
+                    ease: [0, 0.71, 0.2, 1.01]
+                }}
+                className="flex flex-col pt-12 pl-5 max-w-[600px] w-800px pb-5">
                 <span className={`w-[3/4] h-3/4 ${styles.textRes2} pb-4 mx-2 font-poppins font-medium text-justify text-brandBlack`}>
                     With the constant advancements in technology, you can be sure the data we process for you is secured in our in-house dedicated server under lock and key with 24 hours surveillance monitoring.
                     Our stringent measures that we have set in stone on all our Bespoke staff are implemented to the highest standard to prevent any data leak as we fully understand these sensitive data are proprietary to our customers only.
                 </span>
                 <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 transition-all ease-in-out duration-300 hover:bg-brandBlack font-semibold font-poppins mt-8" redirect="resources" />
-            </div>
+            </motion.div>
             <div className='flex items-center justify-center'>
                 <img src={securityicon} alt="securityicon" className='lg:block hidden w-[150%] h-auto items-center'/>
             </div>
         </motion.div>
-        <motion.div className="flex flex-col items-center justify-center px-10 py-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+        <motion.div className="flex flex-col items-center justify-center px-10 py-2 "
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ 
-                duration: 5.5,
-                delay: 0.2,
+                duration: 1.5,
+                delay: 0.8,
                 ease: [0, 0.71, 0.2, 1.01]
             }}
         >
             <h1 className={`font-poppins text-center font-bold pb-4 pt-8 text-brandBlue ${styles.textResHeadline}`}>
                 HOW YOUR BESPOKE STAFF CAN HELP WITH YOUR BUSINESS
             </h1>
-            <div className="xs:flex hidden flex-row overflow-hidden bg-slate-200 rounded-[55px] w-[95%] h-[50%] ">
+            <div className="xs:flex hidden flex-row overflow-hidden bg-slate-200 rounded-[55px] w-[95%] h-[50%] shadow-2xl drop-shadow-2xl">
                 <Card  image1={ kangarooaustralia }  text="Australian reps at your beck and call"/>
                 <Card  image1={ scale0 } text="Scale faster with efficiency"/>
                 <Card  image1={ cost0 } text="Reduce staffing cost"/>

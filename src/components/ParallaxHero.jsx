@@ -18,7 +18,12 @@ const ParallaxHero = () => {
   return (
     <div className="top-[-25%] flex flex-col justify-center items-center w-screen overflow-hidden">
       <div className="flex overflow-hidden text-white font-bold">
-        
+        <div className="z-0">
+          <video loop autoPlay muted playsInLine className="object-fit aspect-video w-screen h-full z-0">
+            <source src={ videowebm } type="video/webm"/>
+            <source src={ video } type="video/mp4"/>
+          </video>
+        </div>
         <div className={`flex flex-row items-center z-10`}>
           <div className='absolute -left-0 flex flex-col justify-center pl-12'>
             <motion.h1 
@@ -42,17 +47,10 @@ const ParallaxHero = () => {
             </a>
           </div>
         </div>
-        <div className="z-0 bg-fixed">
-          <video loop autoPlay muted playsInLine className="object-cover aspect-video w-screen z-0">
-            <source src={ videowebm } type="video/webm"/>
-            <source src={ video } type="video/mp4"/>
-          </video>
-        </div>
+        
       </div>
 
-      <div ref={ref} className=' px-[10%] md:block hidden'
-        
-      >
+      <div ref={ref} className=' px-[10%] md:block hidden'>
         <div className='w-full h-full p-8 gap-10 content-around flex flex-row'>
           <CustomButton name="My Bespoke Staff Marketing" tpx="40" icon={marketing} seperator={lineseperator} redirect="contactus"/>
           <CustomButton name="My Bespoke Staff Accounting" tpx="40" icon={accounting} seperator={lineseperator} redirect="contactus"/>

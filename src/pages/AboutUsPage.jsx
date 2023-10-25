@@ -12,7 +12,7 @@ const AboutUsPage = () => {
     <Suspense fallback={<Loader />}>
       <div>
         <Navbar />
-        <div className="absolute top-[15%]">
+        <div className="absolute top-[18%]">
           <AboutUs />
           <Footer />
         </div>

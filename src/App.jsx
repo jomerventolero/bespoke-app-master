@@ -34,7 +34,7 @@ function App() {
         />
         <Navbar />
         <div
-          className="absolute top-[10%] w-screen"
+          className="absolute w-screen"
         >
           <ParallaxHero/>
           <div className="px-[10%]">

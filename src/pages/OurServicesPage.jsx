@@ -23,7 +23,7 @@ const OurServicesPage = () => {
               delay: 0.2,
               ease: [0, 0.71, 0.2, 1.01]
             }}     
-            className="absolute top-[15%]"       
+            className="absolute top-[18%]"       
           >
             <OurServices />
             <Footer />
