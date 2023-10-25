@@ -5,7 +5,6 @@ import speaking from '../assets/speakingwithus.jpg'
 import containers from '../assets/containers.jpg'
 
 
-
 const WhyChooseBespoke = () => {
   return (
     <div className="flex flex-col gap-8">
@@ -15,14 +14,6 @@ const WhyChooseBespoke = () => {
       </div>
       <motion.div
         className={`grid grid-cols-1 md:grid-cols-2 gap-4`}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{
-          type: "fadeIn",
-          duration: 0.2,
-          delay: 0.2
-        }}
-        viewport={{ once: true }}
       >
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -112,8 +103,8 @@ const WhyChooseBespoke = () => {
           </span>
         </motion.div>
       </motion.div>
-      <div className={`rounded-xl bg-gradient-to-t from-blue-400 to-indigo-400 w-auto h-auto justify-center py-8 sm:flex hidden`}>
-        <a href="/contactus" className={`transition-colors ease-in-out duration-300 bg-brandBlack hover:bg-brandBlue text-center text-white rounded-[50px] w-[15%] h-[80%] my-2 py-4`}>Contact Us</a>
+      <div className={`shadow-2xl drop-shadow-2xl rounded-xl bg-gradient-to-t from-blue-400 to-indigo-400 w-auto h-auto justify-center py-8 sm:flex hidden`}>
+        <a href="/contactus" className={`shadow-2xl drop-shadow-2xl font-poppins font-medium transition-colors ease-in-out duration-300 bg-brandBlack hover:bg-brandBlue text-center text-white rounded-[50px] w-[15%] h-[80%] my-2 py-4`}>Contact Us</a>
       </div>
     </div>
   )

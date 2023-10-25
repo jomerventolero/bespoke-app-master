@@ -42,7 +42,7 @@ const ParallaxHero = () => {
             </a>
           </div>
         </div>
-        <div className="bg-fixed">
+        <div className="z-0 bg-fixed">
           <video loop autoPlay muted playsInLine className="object-cover aspect-video w-screen z-0">
             <source src={ videowebm } type="video/webm"/>
             <source src={ video } type="video/mp4"/>

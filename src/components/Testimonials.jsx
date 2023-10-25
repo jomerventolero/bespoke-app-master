@@ -19,7 +19,7 @@ const Testimonials = () => {
 
   return (
     <section id="testimonials" className='pt-8'>
-        <motion.div className="flex flex-row justify-center w-full h-full bg-gradient-to-b from-indigo-300 to-cyan-200 rounded-xl"
+        <motion.div className="flex flex-row justify-center w-full h-full bg-gradient-to-b from-indigo-300 to-cyan-200 rounded-xl shadow-2xl drop-shadow-2xl"
             isFocused={() => setIsFocused(true)}  
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -34,7 +34,7 @@ const Testimonials = () => {
                     With the constant advancements in technology, you can be sure the data we process for you is secured in our in-house dedicated server under lock and key with 24 hours surveillance monitoring.
                     Our stringent measures that we have set in stone on all our Bespoke staff are implemented to the highest standard to prevent any data leak as we fully understand these sensitive data are proprietary to our customers only.
                 </span>
-                <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 transition-all ease-in-out duration-300 hover:bg-brandBlack font-semibold font-poppins mt-8" redirect="contactus" />
+                <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 transition-all ease-in-out duration-300 hover:bg-brandBlack font-semibold font-poppins mt-8" redirect="resources" />
             </div>
             <div className='flex items-center justify-center'>
                 <img src={securityicon} alt="securityicon" className='lg:block hidden w-[150%] h-auto items-center'/>
