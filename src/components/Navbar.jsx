@@ -12,8 +12,16 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false)
   const { scrollYProgress } = useScroll()
 
+  const openMobileMenu = () => {
+    setToggle(true)
+  }
+
+  const closeMobileMenu = () => {
+    setToggle(false)
+  }
+
   return (
-    <nav className={`z-50 fixed w-[97%] bg-white top-0 flex shadow-xl py-1 px-6 justify-start items-center rounded-2xl m-5 navbar`}>
+    <nav className={`z-50 fixed w-[90%] md:w-[97%] bg-white top-0 flex shadow-xl py-1 px-6 justify-start items-center rounded-2xl m-5 navbar`}>
         
         <a href='/'>
             <img src={ logo } alt="logo" className={`object-contain block w-[35%] cursor-pointer ${toggle ? 'w-[100px]' : 'w-[35%]'}`}/>
@@ -39,13 +47,16 @@ const Navbar = () => {
 
         <div className='md:hidden flex flex-1 justify-end items-center '>
           <a href="/contactus" className="text-brandBlack hover:text-brandBlue font-poppins font-semibold pr-8 text-right align-center">Contact Us</a>
-          <Hamburger toggled={ toggle } toggle={ setToggle } />
-          <div className={`${toggle ? 'flex' : 'hidden'} absolute float-right top-[100%] right-[10px] bg-white mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-            <ul className="flex flex-1 flex-col justify-end items-center  ">
+          <Hamburger toggled={ toggle } toggle={ openMobileMenu } />
+          <div className={`${toggle ? 'block' : 'hidden'} fixed inset-0 bg-white z-50`}>
+            <div className="absolute top-4 right-4">
+              <button className="text-brandBlack hover:text-brandBlue font-poppins font-semibold" onClick={closeMobileMenu}>Exit</button>
+            </div>
+            <ul className="flex flex-col justify-center items-center h-screen">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-normal cursor-pointer text-[16px] text-brandBlack ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'}`}
+                  className={`font-poppins font-normal cursor-pointer text-[16px] text-brandBlack ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
 
                 >
                   <a href={`${ nav.id}`} className="text-brandBlack">
@@ -54,9 +65,8 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            
           </div>
-      </div>
+        </div>
       <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
     </nav>
   )

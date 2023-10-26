@@ -100,7 +100,7 @@ const ContactForm = () => {
                     onChange={ handleVerify }
                     className="py-4"
                 />
-                <div className="flex flex-row pt-4">
+                <div className="flex flex-row pt-4 mb-4">
                     <button type="submit" className={`shadow-2xl text-[75%] px-[4rem] py-[1rem] rounded-[20px] font-poppins font-semibold 
                     ${ isVerified ? "text-white bg-indigo-500 shadow-indigo-500/50" : "text-brandBlack bg-transparent" }`} disabled={!isVerified}>
                         Submit
@@ -135,7 +135,7 @@ const ContactForm = () => {
                     onChange={ handleVerify }
                     className="py-4"
                 />
-                <div className="flex flex-row pt-4">
+                <div className="flex flex-row pt-4 ">
                     <button type="submit" className={`shadow-2xl text-[75%] px-[4rem] py-[1rem] rounded-[20px] font-poppins font-semibold 
                     ${ isVerified ? "text-white bg-brandBlue" : "text-brandBlack bg-transparent" }`} disabled={!isVerified}>
                         Submit

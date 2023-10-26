@@ -7,11 +7,17 @@ const Navbar = lazy(() => import('../components/Navbar'))
 const Footer = lazy(() => import('../components/Footer'))
        
 import { motion } from 'framer-motion'
+import { SuperSEO } from 'react-super-seo'
 
 const JobsPage = () => {
 
   return (
     <Suspense fallback={<Loader />}>
+       <SuperSEO
+          title="Bespoke | Jobs ⚒️"
+          description="Working at Bespoke. Jobs At Bespoke"
+          url="https://www.mybespokestaff.com/jobs"
+        />
       <Navbar />
       <div className="absolute top-[18%] flex flex-col gap-4 justify-center overflow-hidden w-full">
         <motion.div className={`flex justify-center py-52 bg-officebg bg-cover`}

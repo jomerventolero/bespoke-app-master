@@ -7,11 +7,16 @@ import four from '../assets/4.png'
 import UnStyledButton from './UnStyledButton'
 import { motion } from 'framer-motion'
 import styles from '../style'
+import { SuperSEO } from 'react-super-seo'
 
 const HowitWorks = () => {
   return (
     <div id="howitworks">
-        
+        <SuperSEO
+          title="Bespoke | How it works "
+          description="Outsource to the Philippines and create a dedicated team, without the worry about Office Space, IT, Recruitment, Payroll, and more."
+          url="https://www.mybespokestaff.com/howitworks"
+        />
         <motion.div className="relative flex flex-col justify center px-10 py-8"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

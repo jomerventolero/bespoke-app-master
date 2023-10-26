@@ -25,7 +25,8 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={middlemen} alt="middlemen" draggable="false" className="rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img src={middlemen} alt="middlemen" draggable="false" className="hidden md:block rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img src={middlemen} alt="middlemen" draggable="false" className="block md:hidden rounded-xl shadow-2xl drop-shadow-2xl"/>
         </motion.div>
         <motion.div
           className="flex flex-col justify-center"
@@ -39,7 +40,7 @@ const WhyChooseBespoke = () => {
           viewport={{ once: true }}
         >
           <span
-            className={`font-poppins font-medium text-2xl text-center text-brandBlack`}
+            className={`font-poppins font-medium md:text-2xl text-center text-brandBlack`}
           >
             We are not middlemen. We find out what you need, train your bespoke staff and implement your requirements and expectations.
           </span>
@@ -55,8 +56,9 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
+          <img src={speaking} alt="image" draggable="false" className="block md:hidden rounded-xl shadow-2xl drop-shadow-2xl"/>
           <span
-            className={`font-poppins font-medium text-2xl text-center text-brandBlack`}
+            className={`font-poppins font-medium md:text-2xl pt-4 md:pt-0 text-center text-brandBlack`}
           >
             20 years combined experience with key personnel having experience in the main functions of the freight forwarding and international trade industry just by speaking to us you can tell immediately whether we are a fit or not to your business.
           </span>
@@ -71,7 +73,8 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={speaking} alt="image" draggable="false" className="rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img src={speaking} alt="image" draggable="false" className="hidden md:block rounded-xl shadow-2xl drop-shadow-2xl"/>
+          
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -100 }}
@@ -83,7 +86,8 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={containers} alt="image" draggable="false" className="rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img src={containers} alt="image" draggable="false" className="hidden md:block rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img src={containers} alt="image" draggable="false" className="block md:hidden rounded-xl shadow-2xl drop-shadow-2xl"/>
         </motion.div>
         <motion.div
           className="flex flex-col justify-center"
@@ -97,7 +101,7 @@ const WhyChooseBespoke = () => {
           viewport={{ once: true }}
         >
           <span
-            className={`font-poppins font-medium text-2xl text-center text-brandBlack`}
+            className={`font-poppins font-medium md:text-2xl text-center text-brandBlack`}
           >
             Being up to date on technology, our focus on the security of your information that we process and the transparency of how your team is doing is at our utmost priority.
           </span>

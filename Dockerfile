@@ -1,11 +1,13 @@
-FROM node:12-alpine
+FROM node:alpine
 
-RUN apk add --no-cache python2 g++ make
+WORKDIR /app
 
-WORKDIR /bespoke-app-master/
+COPY package.json .
+
+RUN npm install
 
 COPY . .
 
-RUN yarn install --production
+EXPOSE 5173
 
-CMD ["npm run dev", "/package.json"]
+CMD ["npm", "run", "dev"]

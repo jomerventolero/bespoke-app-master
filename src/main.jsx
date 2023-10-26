@@ -18,6 +18,7 @@ import {
 import "./index.css";
 import WhyDoFreightPage from "./pages/WhyDoFreightPage"
 import WhyShouldYouPage from "./pages/WhyShouldYouPage"
+import DataSecurity from "./pages/DataSecurity"
 
 const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
   {
     path: "/whyshouldyouchoosetohireabespokestaff",
     element: <WhyShouldYouPage />
+  },
+  {
+    path: "/datasecurity",
+    element: <DataSecurity />
   },
   {
     path: "*",
