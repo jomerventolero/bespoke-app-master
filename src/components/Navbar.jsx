@@ -34,12 +34,11 @@ const Navbar = () => {
                     key={nav.id}
                     className={`font-poppins font-bold cursor-pointer justify-between place-items-start text-[20px] text-black ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
                 >
-                    <a href={`${nav.id}`} className={`hover:text-brandBlue text-center text-brandBlack max-h-4 transition-colors ease-in-out duration-300 ${styles.textResNavLinks} `}>
+                    <a href={`${nav.id}`} className={`hover:text-brandBlue text-center text-brandBlack max-h-4 transition-colors ease-in-out duration-300 text-lg`}>
                         {nav.title}
                     </a>
                 </li>
             ))}
-            
         </ul>
         <div className="absolute right-10 pt-6 pr-4 pb-4 lg:block hidden">
             <ContactUs/>
@@ -48,15 +47,23 @@ const Navbar = () => {
         <div className='md:hidden flex flex-1 justify-end items-center '>
           <a href="/contactus" className="text-brandBlack hover:text-brandBlue font-poppins font-semibold pr-8 text-right align-center">Contact Us</a>
           <Hamburger toggled={ toggle } toggle={ openMobileMenu } />
-          <div className={`${toggle ? 'block' : 'hidden'} fixed inset-0 bg-white z-50`}>
+          <motion.div 
+            initial={{ opacity: 0, y: -100}}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+                type: "fadeIn",
+                duration: 0.8,
+                delay: 0.5
+            }}
+            className={`${toggle ? 'block' : 'hidden'} fixed inset-0 bg-white z-50`}>
             <div className="absolute top-4 right-4">
-              <button className="text-brandBlack hover:text-brandBlue font-poppins font-semibold" onClick={closeMobileMenu}>Exit</button>
+              <button className="text-brandBlack hover:text-brandBlue" onClick={closeMobileMenu}>Exit</button>
             </div>
             <ul className="flex flex-col justify-center items-center h-screen">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-normal cursor-pointer text-[16px] text-brandBlack ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
+                  className={`font-poppins font-bold cursor-pointer text-[16px] text-brandBlack ${index === navLinks.length - 1 ? 'mb-0' : 'mb-4'}`}
 
                 >
                   <a href={`${ nav.id}`} className="text-brandBlack">
@@ -65,7 +72,7 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </motion.div>
         </div>
       <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
     </nav>
