@@ -49,6 +49,7 @@ const DataSecurity = () => {
                     duration: 0.8,
                     delay: 0.5
                 }}
+                
                 viewport={{ once: true }}
                 src={datatheft} alt="datatheft" draggable="false" className="w-[300px]"/>
             <motion.div
@@ -128,7 +129,17 @@ const DataSecurity = () => {
                     <br/><br/>
                     As an example, the Wazuh FIM module successfully identifies instances of files being generated and downloaded by the STRRAT malware, underscoring its efficacy in data theft prevention. You can observe this detection in Figure below.
                 </motion.p>
-                <img src={fim} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                <motion.img 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true }}
+                    className="w-3/4"
+                    src={fim} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
                 <motion.h1
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -159,7 +170,17 @@ const DataSecurity = () => {
                     <br/><br/>
                     By doing so, the Wazuh Vulnerability Detector module unveils unpatched vulnerabilities on the endpoints, which could potentially serve as entry points for malicious actors seeking to compromise data security. This proactive approach aids in safeguarding against data theft and other security threats.
                 </motion.p>
-                <img src={wazuhdash} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                <motion.img 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    className="w-3/4"
+                    viewport={{ once: true }}
+                    src={wazuhdash} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
                 <motion.h1
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -192,7 +213,17 @@ const DataSecurity = () => {
                     <br/><br/>
                     Through these scans, Wazuh's SCA module identifies various issues, including unnecessary services, default credentials, insecure protocols, and open ports on monitored endpoints. These findings are invaluable in preventing malicious actors from exploiting vulnerabilities to compromise data security.
                 </motion.p>
-                <img src={wazuhsca} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                <motion.img 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true }}
+                    className="w-3/4"
+                    src={wazuhsca} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
                 <motion.h1
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -225,7 +256,17 @@ const DataSecurity = () => {
                     <br/><br/>
                     In a recent blog post, Wazuh showcases its capabilities in detecting both authorized and unauthorized USB drives through the utilization of a constant database (CDB) list containing authorized USB drives. This exemplifies how Wazuh's log data analysis aids in bolstering security measures and guarding against data theft and other potential risks.
                 </motion.p>
-                <img src={wazuhlog} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                <motion.img 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true }}
+                    className="w-3/4"
+                    src={wazuhlog} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
             </motion.div>
         </div>
     </>

@@ -21,7 +21,7 @@ const styles = {
     textRes: "xl:text-[20px] lg:text-[12px] md:text-[10px] sm:text-[8px] ss:text-[6px] xs:text-[4px]",
     textResCard: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
     textResHeadings: "xl:text-[25px] lg:text-[22px] md:text-[18px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
-    textResNavLinks: "xl:text-[22px] lg:text-[20x] md:text-[16px] sm:text-[9px] ss:text-[8px] xs:text-[7px]",
+    textResNavLinks: "xl:text-[18px] lg:text-[16x] md:text-[14px] sm:text-[9px] ss:text-[8px] xs:text-[7px]",
     textResContactForm: "xl:text-[35px] lg:text-[22x] md:text-[15px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
     textResP: "xl:text-[30px] lg:text-[25px] md:text-[20px] sm:text-[15px] ss:text-[12px] xs:text-[8px]",
     textResButton: "xl:text-[10px] lg:text-[8px] md:text-[6px] sm:text-[4px] ss:text-[4px] xs:text-[2px]",

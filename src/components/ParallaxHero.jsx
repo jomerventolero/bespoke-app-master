@@ -52,15 +52,15 @@ const ParallaxHero = () => {
 
       <div ref={ref} className=' px-[10%] md:block hidden'>
         <div className='w-full h-full p-8 gap-10 content-around flex flex-row'>
-          <CustomButton name="My Bespoke Staff Marketing" tpx="40" icon={marketing} seperator={lineseperator} redirect="https://odoo.mybespokestaff.com"/>
-          <CustomButton name="My Bespoke Staff Accounting" tpx="40" icon={accounting} seperator={lineseperator} redirect="https://odoo.mybespokestaff.com"/>
+          <CustomButton name="My Bespoke Staff Marketing" tpx="40" icon={marketing} seperator={lineseperator} redirect="contactus"/>
+          <CustomButton name="My Bespoke Staff Accounting" tpx="40" icon={accounting} seperator={lineseperator} redirect="contactus"/>
         </div>
         <div className='w-full h-full pt-2 p-10 gap-10 content-around flex flex-row'>
-          <CustomButton name="My Bespoke Staff Customer Support" tpx="40" icon={customer} seperator={lineseperator} redirect="https://odoo.mybespokestaff.com"/>
-          <CustomButton name="My Bespoke Staff Data Entry" tpx="40" icon={dataentry} seperator={lineseperator} redirect="https://odoo.mybespokestaff.com"/>
+          <CustomButton name="My Bespoke Staff Customer Support" tpx="40" icon={customer} seperator={lineseperator} redirect="contactus"/>
+          <CustomButton name="My Bespoke Staff Data Entry" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
         <div className='items-center justify-center self-center p-6 flex pt-2'>
-          <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={frontbackoffice} seperator={lineseperator} redirect="https://odoo.mybespokestaff.com"/>
+          <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={frontbackoffice} seperator={lineseperator} redirect="contactus"/>
         </div>
       </div>
 

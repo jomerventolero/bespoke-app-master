@@ -28,7 +28,11 @@ export const navLinks = [
       id: "resources",
       title: "RESOURCES",
     },
-  ];
+    {
+      id: "https://odoo.mybespokestaff.com",
+      title: "MYBESPOKESTAFF ERP",
+    },
+];
 
 
 export const quickLinks = [

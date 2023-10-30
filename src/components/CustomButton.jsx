@@ -13,7 +13,7 @@ const CustomButton = ({ name, icon, seperator, redirect}) => {
         delay: 0.2,
       
        }}
-
+       viewport={{ once: true }}
       className="w-[50%] rounded-full bg-brandBlack hover:bg-brandBlue pr-2 pl-2">
         <a href={redirect} className="flex flex-row items-center justify-evenly">
             <img src={icon} alt="icon" className="w-[18%] h-auto p-2"/>
