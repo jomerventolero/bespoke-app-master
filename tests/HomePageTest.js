@@ -3,6 +3,9 @@ import ParallaxHero from './ParallaxHero';
 
 describe('ParallaxHero', () => {
   test('renders the heading and "Read More" button', () => {
+    /* The `render(<ParallaxHero />)` statement is rendering the `ParallaxHero` component. This means
+    that it is creating a virtual representation of the `ParallaxHero` component and rendering it to
+    the screen. This allows us to test the component and make assertions about its rendered output. */
     render(<ParallaxHero />);
     const heading = screen.getByText(/we take the complicated out of your outsourcing needs/i);
     expect(heading).toBeInTheDocument();
@@ -46,3 +49,5 @@ describe('ParallaxHero', () => {
     expect(frontBackOfficeButton).toHaveAttribute('redirect', 'contactus');
   });
 });
+
+

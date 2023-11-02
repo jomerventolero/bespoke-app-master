@@ -1,3 +1,7 @@
+/* The line `expect(frontBackOfficeButton).toHaveAttribute('redirect', 'contactus');` is an
+assertion in a test case. It is checking that the `frontBackOfficeButton` element has an
+attribute called `redirect` with a value of `'contactus'`. If the assertion fails, it means that
+the button does not have the expected attribute or the attribute value is not `'contactus'`. */
 import React from 'react'
 import Loader from '../components/Loader'
 

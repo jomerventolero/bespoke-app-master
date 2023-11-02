@@ -13,7 +13,7 @@ export const navLinks = [
       title: "HOW IT WORKS",
     },
     {
-      id: "jobs",
+      id: "https://odoo.mybespokestaff.com/jobs",
       title: "JOBS",
     },
     {
@@ -29,7 +29,7 @@ export const navLinks = [
       title: "RESOURCES",
     },
     {
-      id: "https://odoo.mybespokestaff.com",
+      id: "https://odoo.mybespokestaff.com/web/login",
       title: "MYBESPOKESTAFF ERP",
     },
 ];

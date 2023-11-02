@@ -147,6 +147,8 @@ export const zoomIn = (delay, duration) => ({
   },
 });
 
+/* The `footerVariants` constant is defining an animation variant for a footer element. It has two
+states: `hidden` and `show`. */
 export const footerVariants = {
   hidden: {
     opacity: 0,
