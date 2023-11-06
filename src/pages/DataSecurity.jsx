@@ -17,56 +17,71 @@ const DataSecurity = () => {
           description="How Bespoke Detect Data Theft."
           url="https://www.mybespokestaff.com/datasecurity"
         />
-        <div className="flex flex-col justify-center items-center mt-40">
-            <motion.h1 
-                initial={{ opacity: 0, x: -100}}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                    type: "fadeIn",
-                    duration: 0.8,
-                    delay: 0.5
-                }}
-                viewport={{ once: true }}
-                className='text-[30px] text-brandBlack font-poppins font-bold'>Data Security</motion.h1>
-            <motion.div
-                initial={{ opacity: 0, x: -100}}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                    type: "fadeIn",
-                    duration: 0.8,
-                    delay: 0.5
-                }}
-                viewport={{ once: true }}
-                className="font-poppins font-medium"
-            >
-                Detecting Data Theft with Wazuh
-            </motion.div>
-            <motion.img 
-                initial={{ opacity: 0, y: -100}}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    type: "fadeIn",
-                    duration: 0.8,
-                    delay: 0.5
-                }}
+        <div className="flex flex-col justify-center items-center mt-40 overflow-x-hidden">
+            <div className="grid grid-cols-2 place-self-center mx-40">
+                <motion.h1 
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true }}
+                    className='text-[30px] text-brandBlack font-poppins font-bold'>Data Security</motion.h1>
+                <motion.div
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true }}
+                    className="font-poppins font-medium"
+                >
+                    Detecting Data Theft with Wazuh
+                </motion.div>
+                <motion.img 
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    
+                    viewport={{ once: true }}
+                    src={datatheft} alt="datatheft" draggable="false" className="w-[300px]"/>
+                    <motion.p 
+                        initial={{ opacity: 0}}
+                        whileInView={{ opacity: 1}}
+                        transition={{
+                            type: "fadeIn",
+                            duration: 0.8,
+                            delay: 0.5
+                        }}
+                        viewport={{ once: true }}
+                        className="px-5 pb-5 text-justify">
+                        Data theft involves the unauthorized acquisition of data residing within business databases, endpoints, and servers. This pilfered information encompasses items such as credentials, credit card details, personally identifiable information, medical records, software code, and proprietary technologies. Data theft is a peril that can manifest both within and beyond an organization's boundaries.
+                        Malignant actors may purloin data from either organizations or individuals with the intention of selling it to other malicious parties. Data theft poses a significant threat to numerous entities since it can lead to issues like identity theft, harm to reputation, and financial setbacks.
+                    </motion.p>
+                </div>
+                <motion.div
+                    initial={{ opacity: 0, y: 100}}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        type: "fadeIn",
+                        duration: 0.8,
+                        delay: 0.5
+                    }}
+                    viewport={{ once: true }}
+                    className="flex flex-col px-10 font-poppins font-light  pb-20"
+                >
+                    
                 
-                viewport={{ once: true }}
-                src={datatheft} alt="datatheft" draggable="false" className="w-[300px]"/>
-            <motion.div
-                initial={{ opacity: 0, y: 100}}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                    type: "fadeIn",
-                    duration: 0.8,
-                    delay: 0.5
-                }}
-                viewport={{ once: true }}
-                className="flex flex-col px-10 font-poppins font-light  pb-20"
-            >
-                <p className="px-5 pb-5 text-justify">
-                    Data theft involves the unauthorized acquisition of data residing within business databases, endpoints, and servers. This pilfered information encompasses items such as credentials, credit card details, personally identifiable information, medical records, software code, and proprietary technologies. Data theft is a peril that can manifest both within and beyond an organization's boundaries.
-                    Malignant actors may purloin data from either organizations or individuals with the intention of selling it to other malicious parties. Data theft poses a significant threat to numerous entities since it can lead to issues like identity theft, harm to reputation, and financial setbacks.
-                </p>
+                
+                
                 <motion.h1
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -110,36 +125,38 @@ const DataSecurity = () => {
                 >
                     File Integrity Monitoring (FIM) and Data Theft Detection
                 </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0, x: 100}}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{
-                        type: "fadeIn",
-                        duration: 0.8,
-                        delay: 0.5
-                    }}
-                    viewport={{ once: true }}
-                    className="px-5 py-5 text-justify"
-                >
-                    Within the security framework of Wazuh, the File Integrity Monitoring (FIM) module plays a critical role in safeguarding data integrity. This module continually observes the files and directories on an endpoint, promptly raising alerts when it detects file creation, modification, or deletion activities.
-                    <br/><br/>
-                    Wazuh's FIM module goes a step further by preserving cryptographic checksums and other file attributes, as well as monitoring changes to Windows registry keys. This meticulous record-keeping allows us to identify any alterations to these values with precision. Monitoring takes place at regular intervals or even in near real-time, ensuring swift response to any unauthorized changes.
-                    <br/><br/>
-                    Malicious actors often employ malware to pilfer data from endpoints, with these harmful programs creating or downloading malicious files onto the compromised systems. Wazuh's FIM module excels in detecting these nefarious activities when such files are created or downloaded on the affected endpoints.
-                    <br/><br/>
-                    As an example, the Wazuh FIM module successfully identifies instances of files being generated and downloaded by the STRRAT malware, underscoring its efficacy in data theft prevention. You can observe this detection in Figure below.
-                </motion.p>
-                <motion.img 
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                        type: "fadeIn",
-                        duration: 0.8,
-                        delay: 0.5
-                    }}
-                    viewport={{ once: true }}
-                    className="w-3/4"
-                    src={fim} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                <div className="grid grid-cols-2 gap-8">
+                    <motion.p
+                        initial={{ opacity: 0, x: -100}}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{
+                            type: "slideIn",
+                            duration: 1.5,
+                            delay: 0.5
+                        }}
+                        viewport={{ once: true }}
+                        className="px-5 py-5 text-justify"
+                    >
+                        Within the security framework of Wazuh, the File Integrity Monitoring (FIM) module plays a critical role in safeguarding data integrity. This module continually observes the files and directories on an endpoint, promptly raising alerts when it detects file creation, modification, or deletion activities.
+                        <br/><br/>
+                        Wazuh's FIM module goes a step further by preserving cryptographic checksums and other file attributes, as well as monitoring changes to Windows registry keys. This meticulous record-keeping allows us to identify any alterations to these values with precision. Monitoring takes place at regular intervals or even in near real-time, ensuring swift response to any unauthorized changes.
+                        <br/><br/>
+                        Malicious actors often employ malware to pilfer data from endpoints, with these harmful programs creating or downloading malicious files onto the compromised systems. Wazuh's FIM module excels in detecting these nefarious activities when such files are created or downloaded on the affected endpoints.
+                        <br/><br/>
+                        As an example, the Wazuh FIM module successfully identifies instances of files being generated and downloaded by the STRRAT malware, underscoring its efficacy in data theft prevention. You can observe this detection in Figure below.
+                    </motion.p>
+                    <motion.img 
+                        initial={{ opacity: 0, x: 100 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{
+                            type: "fadeIn",
+                            duration: 1.5,
+                            delay: 0.5
+                        }}
+                        viewport={{ once: true }}
+                        className="w-3/4 self-center place-self-center"
+                        src={fim} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                </div>
                 <motion.h1
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -153,34 +170,37 @@ const DataSecurity = () => {
                 >
                     Identifying Vulnerabilities with <span className="text-blue-700">Wazuh</span>
                 </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0, x: 100}}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{
-                        type: "fadeIn",
-                        duration: 0.8,
-                        delay: 0.5
-                    }}
-                    viewport={{ once: true }}
-                    className="px-5 py-5 text-justify"
-                >
-                    The core function of vulnerability detection is to pinpoint security frailties within both the operating system and the applications residing on the monitored endpoints. Wazuh employs its dedicated Vulnerability Detector module to carry out this crucial task.
-                    <br/><br/>
-                    To enable this process, Wazuh creates a comprehensive vulnerability database, drawing information from widely accessible Common Vulnerabilities and Exposures (CVE) repositories. This database acts as a central resource for cross-referencing with the inventory data of applications collected from the monitored endpoints. Through this meticulous comparison, the Vulnerability Detector module can successfully flag any software that exhibits vulnerabilities.
-                    <br/><br/>
-                    By doing so, the Wazuh Vulnerability Detector module unveils unpatched vulnerabilities on the endpoints, which could potentially serve as entry points for malicious actors seeking to compromise data security. This proactive approach aids in safeguarding against data theft and other security threats.
-                </motion.p>
-                <motion.img 
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                        type: "fadeIn",
-                        duration: 0.8,
-                        delay: 0.5
-                    }}
-                    className="w-3/4"
-                    viewport={{ once: true }}
-                    src={wazuhdash} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                <div className="grid grid-cols-2">
+                    <motion.img 
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{
+                            type: "fadeIn",
+                            duration: 0.8,
+                            delay: 0.5
+                        }}
+                        className="w-3/4 self-center place-self-center"
+                        viewport={{ once: true }}
+                        src={wazuhdash} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                    <motion.p
+                        initial={{ opacity: 0, x: 100}}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{
+                            type: "fadeIn",
+                            duration: 0.8,
+                            delay: 0.5
+                        }}
+                        viewport={{ once: true }}
+                        className="px-5 py-5 text-justify"
+                    >
+                        The core function of vulnerability detection is to pinpoint security frailties within both the operating system and the applications residing on the monitored endpoints. Wazuh employs its dedicated Vulnerability Detector module to carry out this crucial task.
+                        <br/><br/>
+                        To enable this process, Wazuh creates a comprehensive vulnerability database, drawing information from widely accessible Common Vulnerabilities and Exposures (CVE) repositories. This database acts as a central resource for cross-referencing with the inventory data of applications collected from the monitored endpoints. Through this meticulous comparison, the Vulnerability Detector module can successfully flag any software that exhibits vulnerabilities.
+                        <br/><br/>
+                        By doing so, the Wazuh Vulnerability Detector module unveils unpatched vulnerabilities on the endpoints, which could potentially serve as entry points for malicious actors seeking to compromise data security. This proactive approach aids in safeguarding against data theft and other security threats.
+                    </motion.p>
+                    
+                </div>
                 <motion.h1
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -194,36 +214,38 @@ const DataSecurity = () => {
                 >
                     Security Configuration Assessment <span className="text-blue-700">(SCA)</span>
                 </motion.h1>
-                <motion.p
-                    initial={{ opacity: 0, x: 100}}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{
-                        type: "fadeIn",
-                        duration: 0.8,
-                        delay: 0.5
-                    }}
-                    viewport={{ once: true }}
-                    className="px-5 py-5 text-justify"
-                >
-                    Security Configuration Assessment (SCA) is an essential process that involves the thorough examination of monitored endpoints to identify misconfigurations that could potentially render these endpoints vulnerable to cyber attacks.
-                    <br/><br/>
-                    SCA, as facilitated by Wazuh, continuously enhances the configuration posture of systems by adhering to recognized standards such as the Center for Internet Security (CIS), NIST, PCI-DSS, HIPAA, and various others.
-                    <br/><br/>
-                    Wazuh's SCA module conducts routine scans on monitored endpoints with the primary goal of unveiling potential exposures of sensitive data or configuration inaccuracies. These scans meticulously evaluate the configurations of both the endpoints and the applications running on them. Policy files, containing rules designed for testing against the actual configurations, guide this assessment process.
-                    <br/><br/>
-                    Through these scans, Wazuh's SCA module identifies various issues, including unnecessary services, default credentials, insecure protocols, and open ports on monitored endpoints. These findings are invaluable in preventing malicious actors from exploiting vulnerabilities to compromise data security.
-                </motion.p>
-                <motion.img 
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{
-                        type: "fadeIn",
-                        duration: 0.8,
-                        delay: 0.5
-                    }}
-                    viewport={{ once: true }}
-                    className="w-3/4"
-                    src={wazuhsca} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                <div className="grid grid-cols-2">
+                    <motion.p
+                        initial={{ opacity: 0, x: 100}}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{
+                            type: "fadeIn",
+                            duration: 0.8,
+                            delay: 0.5
+                        }}
+                        viewport={{ once: true }}
+                        className="px-5 py-5 text-justify"
+                    >
+                        Security Configuration Assessment (SCA) is an essential process that involves the thorough examination of monitored endpoints to identify misconfigurations that could potentially render these endpoints vulnerable to cyber attacks.
+                        <br/><br/>
+                        SCA, as facilitated by Wazuh, continuously enhances the configuration posture of systems by adhering to recognized standards such as the Center for Internet Security (CIS), NIST, PCI-DSS, HIPAA, and various others.
+                        <br/><br/>
+                        Wazuh's SCA module conducts routine scans on monitored endpoints with the primary goal of unveiling potential exposures of sensitive data or configuration inaccuracies. These scans meticulously evaluate the configurations of both the endpoints and the applications running on them. Policy files, containing rules designed for testing against the actual configurations, guide this assessment process.
+                        <br/><br/>
+                        Through these scans, Wazuh's SCA module identifies various issues, including unnecessary services, default credentials, insecure protocols, and open ports on monitored endpoints. These findings are invaluable in preventing malicious actors from exploiting vulnerabilities to compromise data security.
+                    </motion.p>
+                    <motion.img 
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{
+                            type: "fadeIn",
+                            duration: 0.8,
+                            delay: 0.5
+                        }}
+                        viewport={{ once: true }}
+                        className="w-3/4 self-center place-self-center"
+                        src={wazuhsca} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
+                </div>
                 <motion.h1
                     initial={{ opacity: 0, y: 50}}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -265,7 +287,7 @@ const DataSecurity = () => {
                         delay: 0.5
                     }}
                     viewport={{ once: true }}
-                    className="w-3/4"
+                    className="w-3/4 self-center place-self-center"
                     src={wazuhlog} alt="Wazuh File Integrity Monitoring (FIM) and Data Theft Detection" draggable="false"/>
             </motion.div>
         </div>
