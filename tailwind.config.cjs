@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: {
         "background": "url('src/assets/mainherosection.png')", 
         "officebg": "url('src/assets/officebg.jpg')",
+        "landing": "url('src/assets/port.jpg')",
       }
     },
     screens: {
