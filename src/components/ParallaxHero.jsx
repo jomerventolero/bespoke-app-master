@@ -19,13 +19,13 @@ const ParallaxHero = () => {
     <div className="flex flex-col justify-center items-center w-screen overflow-hidden">
       <div className="flex overflow-hidden text-white font-bold">
         <div className="z-0">
-          <video loop autoPlay muted playsInLine className="object-fit aspect-video w-screen h-full z-0">
+          <video loop autoPlay muted playsInLine className="object-fit aspect-video w-screen h-full z-0 lg:block hidden">
             <source src={ videowebm } type="video/webm"/>
             <source src={ video } type="video/mp4"/>
           </video>
         </div>
-        <div className={`pt-20 md:pt-0 flex flex-row items-center z-10`}>
-          <div className='absolute -left-0 flex flex-col justify-center pl-12'>
+        <div className={`pt-20 md:pt-0 flex flex-row items-center z-10 `}>
+          <div className='md:absolute -left-0 flex flex-col justify-center pl-12'>
             <motion.h1 
               initial={{ opacity: 0, y: "10vw" }}
               animate={{ opacity: 1 , y: 0 }}
