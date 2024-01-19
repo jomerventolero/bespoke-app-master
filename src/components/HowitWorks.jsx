@@ -125,7 +125,7 @@ const HowitWorks = () => {
             <div className="flex flex-row justify-between items-center sm:px-2 py-5">
               <div>
                 <span className={`text-brandBlack ${styles.textResH4}`}>Ready to form your very <br/> own team of</span>
-                <span className={`text-brandBlue ${styles.textResH4}`}> Bespoke <br/>Staff?</span>
+                <span className={`text-brandBlue ${styles.textResH4}`}> Bespoke Staff?</span>
               </div>
               <div className="flex justify-center content-center align-center self-center items-center">
                 <UnStyledButton buttonStyle={`bg-brandBlue p-4 m-8 text-white rounded-full ${styles.textResH4}`} text="Start Now" redirect="contactus"/>

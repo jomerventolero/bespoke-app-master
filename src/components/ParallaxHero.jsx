@@ -8,17 +8,24 @@ import dataentry from '../assets/Icons/dataentry.png'
 import frontbackoffice from '../assets/Icons/frontbackoffice.png'
 import video from '../assets/video.mp4'
 import videowebm from '../assets/video.webm'
-import { useRef } from 'react'
+import useParallax from '../utils/parallax'
+
+import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
 
 
 const ParallaxHero = () => {
   const ref = useRef()
 
+  useState(() => {
+    useParallax();
+  }, []);
+
+
   return (
     <div className="flex flex-col justify-center items-center w-screen overflow-hidden">
       <div className="flex overflow-hidden text-white font-bold">
-        <div className="z-0">
+        <div className="z-0 parallax" data-speed="0.5">
           <video loop autoPlay muted playsInLine className="object-fit aspect-video w-screen h-full z-0 lg:block hidden">
             <source src={ videowebm } type="video/webm"/>
             <source src={ video } type="video/mp4"/>
