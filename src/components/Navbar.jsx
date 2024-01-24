@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`z-50 fixed w-[90%] md:w-[97%] bg-white top-0 flex shadow-xl py-1 px-6 justify-start items-center rounded-2xl m-5 navbar `}>
+    <nav className={`z-50 fixed w-[90%] md:w-[97%] bg-white top-0 flex shadow-2xl drop-shadow-lg py-1 px-6 justify-start items-center rounded-2xl m-5 navbar`}>
         
         <a href='/'>
             <img src={ logo } alt="logo" className={`object-contain block w-[35%] cursor-pointer ${toggle ? 'w-[100px]' : 'w-[35%]'}`}/>
@@ -34,7 +34,7 @@ const Navbar = () => {
                     key={nav.id}
                     className={`font-poppins font-bold cursor-pointer justify-between place-items-start text-[20px] text-black ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'}`}
                 >
-                    <a href={`${nav.id}`} className={`hover:text-brandBlue text-center text-brandBlack max-h-4 transition-colors ease-in-out duration-300 text-md`}>
+                    <a href={`${nav.id}`} className={`hover:text-brandBlue text-center text-brandBlack max-h-4 transition-colors ease-in-out duration-300 sm:text-lg text-md`}>
                         {nav.title}
                     </a>
                 </li>
@@ -59,7 +59,7 @@ const Navbar = () => {
             <div className="absolute top-4 right-4">
               <button className="text-brandBlack hover:text-brandBlue" onClick={closeMobileMenu}>Exit</button>
             </div>
-            <ul className="flex flex-col justify-center items-center h-screen">
+            <ul className="flex flex-col justify-center items-center h-screen bg-white">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}

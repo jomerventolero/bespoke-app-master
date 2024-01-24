@@ -31,13 +31,13 @@ const ParallaxHero = () => {
             <source src={ video } type="video/mp4"/>
           </video>
         </div>
-        <div className={`pt-20 md:pt-0 flex flex-row items-center z-10 `}>
+        <div className={`pt-20  md:pt-0 flex flex-row items-center z-10 `}>
           <div className='md:absolute -left-0 flex flex-col justify-center pl-12'>
             <motion.h1 
               initial={{ opacity: 0, y: "10vw" }}
               animate={{ opacity: 1 , y: 0 }}
               transition={{ duration: 1, delay: 0.7 }}
-              className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-brandBlack pr-4 pt-8 drop-shadow-2xl`}>
+              className={`flex-1 ${styles.textResH1} font-poppins font-semibold pb-6 text-brandBlack pr-4 pt-16 sm:pt-8 xs:pt-16 drop-shadow-2xl`}>
               WE TAKE THE {" "}<br className="sm:block hidden"/>
               <span className="text-brandBlue text-gradient">COMPLICATED</span> {" "} OUT OF <br />
               YOUR OUTSOURCING NEEDS!

@@ -2,16 +2,10 @@ import React from 'react'
 import outsource from '../assets/outsource.png'
 import services from '../assets/services.png'
 import styles from '../style'
-import { SuperSEO } from 'react-super-seo'
 
 const OurServices = () => {
   return (
     <section id="ourservices">
-        <SuperSEO
-          title="Bespoke | Our Services ⚙️"
-          description="Bespoke is led by a team of professionals that have at least 20 years combined experience in the freight forwarding industry in Australia. We are well versed with the importation and exportation requirements that are unique to Australia. Be it the rules and regulations of AQIS (Australian Quarantine and Inspection Scheme) or the daily operations of the various departments such as the operations / forwarding team to the cartage department and the customs broker department, we have done it all. Do drop us a quick enquiry of how we can be of service to you on your staffing requirements. We are certain we would even be able to advise you on building a team of staff that can generate more income for your business that you didn't know you needed."
-          url="https://www.mybespokestaff.com/ourservices"
-        />
         <div>
             <div>
                 <img src={ outsource } alt="outsource"/>
