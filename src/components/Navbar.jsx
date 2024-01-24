@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Cross as Hamburger } from 'hamburger-react'
 import { navLinks } from '../constants'
 
-import { motion, useScroll } from 'framer-motion'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
