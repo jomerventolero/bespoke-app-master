@@ -10,7 +10,7 @@ import { motion, useScroll } from 'framer-motion'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
-  const { scrollYProgress } = useScroll()
+  
 
   const openMobileMenu = () => {
     setToggle(true)
@@ -40,6 +40,7 @@ const Navbar = () => {
                 </li>
             ))}
         </ul>
+
         <div className="absolute right-10 pt-6 pr-4 pb-4 lg:block hidden">
             <ContactUs/>
         </div>
@@ -74,7 +75,7 @@ const Navbar = () => {
             </ul>
           </motion.div>
         </div>
-      <motion.div className="progress-bar" style={{ scaleX: scrollYProgress }} />
+      
     </nav>
   )
 }

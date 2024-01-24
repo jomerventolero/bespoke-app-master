@@ -203,10 +203,11 @@ body {
 
 .progress-bar {
   position: fixed;
-  top: 0px;
-  left: 0;
-  right: 0;
+  top: 2px;
+  left: 12px;
+  right: 12px;
   height: 3px;
   background: var(--blue);
   transform-origin: 0%;
+  border-radius: 6px 6px 6px 6px;
 }
