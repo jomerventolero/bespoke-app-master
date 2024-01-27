@@ -28,10 +28,7 @@ export const navLinks = [
       id: "resources",
       title: "RESOURCES",
     },
-    {
-      id: "https://odoo.mybespokestaff.com/web/login",
-      title: "MYBESPOKESTAFF ERP",
-    },
+ 
 ];
 
 

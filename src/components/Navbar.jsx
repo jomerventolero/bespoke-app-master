@@ -7,6 +7,7 @@ import { Cross as Hamburger } from 'hamburger-react'
 import { navLinks } from '../constants'
 
 import { motion } from 'framer-motion'
+import SubMenu from './SubMenu'
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -21,7 +22,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className={`z-50 fixed w-[90%] md:w-[97%] bg-white top-0 flex shadow-2xl drop-shadow-lg py-1 px-6 justify-start items-center rounded-2xl m-5 navbar`}>
+    <nav className={`z-50 fixed w-[90%] md:w-[97%] bg-white top-0 shadow-2xl drop-shadow-lg py-1 px-6 justify-start items-center rounded-2xl m-5 navbar flex flex-row`}>
         
         <a href='/'>
             <img src={ logo } alt="logo" className={`object-contain block w-[35%] cursor-pointer ${toggle ? 'w-[100px]' : 'w-[35%]'}`}/>
@@ -42,7 +43,8 @@ const Navbar = () => {
         </ul>
 
         <div className="absolute right-10 pt-6 pr-4 pb-4 lg:block hidden">
-            <ContactUs/>
+            <SubMenu />
+            
         </div>
 
         <div className='md:hidden flex flex-1 justify-end items-center '>
