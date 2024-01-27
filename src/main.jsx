@@ -19,6 +19,7 @@ import "./index.css";
 import WhyDoFreightPage from "./pages/WhyDoFreightPage"
 import WhyShouldYouPage from "./pages/WhyShouldYouPage"
 import DataSecurity from "./pages/DataSecurity"
+import OnboardingPage from "./pages/OnboardingPage"
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
   {
     path: "/datasecurity",
     element: <DataSecurity />
+  },
+  {
+    path: "/onboarding",
+    element: <OnboardingPage />
   },
   {
     path: "*",
