@@ -33,7 +33,7 @@ const ParallaxHero = () => {
             <source src={ video } type="video/mp4"/>
           </video>
         </div>
-        <img src={woman} alt="" className='absolute top-0 object-fit aspect-video w-screen h-full z-50 lg:hidden'/>
+        <img src={woman} alt="" className='absolute hidden top-0 object-fit aspect-video w-screen h-full z-50 lg:hidden'/>
         <div className={`pt-20  md:pt-0 flex flex-row items-center z-10 `}>
           <div className='md:absolute -left-0 flex flex-col justify-center pl-12'>
             <motion.h1 
