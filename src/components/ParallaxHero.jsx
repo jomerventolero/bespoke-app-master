@@ -9,6 +9,8 @@ import frontbackoffice from '../assets/Icons/frontbackoffice.png'
 import video from '../assets/video.mp4'
 import videowebm from '../assets/video.webm'
 import useParallax from '../utils/parallax'
+import woman from '../assets/portrait-smiling.jpg'
+import itsupp from '../assets/Icons/it-4.png'
 
 import { useRef, useState } from 'react'
 import { motion } from 'framer-motion'
@@ -31,6 +33,7 @@ const ParallaxHero = () => {
             <source src={ video } type="video/mp4"/>
           </video>
         </div>
+        <img src={woman} alt="" className='absolute top-0 object-fit aspect-video w-screen h-full z-50 lg:hidden'/>
         <div className={`pt-20  md:pt-0 flex flex-row items-center z-10 `}>
           <div className='md:absolute -left-0 flex flex-col justify-center pl-12'>
             <motion.h1 
@@ -66,8 +69,9 @@ const ParallaxHero = () => {
           <CustomButton name="My Bespoke Staff Customer Support" tpx="40" icon={customer} seperator={lineseperator} redirect="contactus"/>
           <CustomButton name="My Bespoke Staff Data Entry" tpx="40" icon={dataentry} seperator={lineseperator} redirect="contactus"/>
         </div>
-        <div className='items-center justify-center self-center p-6 flex pt-2'>
+        <div className='items-center justify-center gap-10 self-center p-6 flex pt-2'>
           <CustomButton name="My Bespoke Staff Front/Back Office Support" tpx="40" icon={frontbackoffice} seperator={lineseperator} redirect="contactus"/>
+          <CustomButton name="My Bespoke Staff IT Support" tpx="40" icon={itsupp} seperator={lineseperator} redirect="https://it.mybespokestaff.com/"/>
         </div>
       </div>
 

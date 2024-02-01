@@ -15,8 +15,9 @@ const SubMenu = () => {
             whileInView={{ opacity: 1, y: 0}}
             transition={{ duration: 0.5, type: "fadeIn"}}
             exit={{ opacity: 0, y: -100}}
-            className={`absolute top-28 right-8 flex flex-col gap-4 w-36 items-center text-xl font-semibold bg-white rounded-lg p-4 ${toggle ? "block" : "hidden"}`}>
-            <a href="https://odoo.mybespokestaff.com/web/login" className='hover:text-brandBlue'>BES Login</a>
+            className={`absolute top-28 right-8 flex flex-col gap-4 w-36 items-center text-lg text-center font-semibold bg-white rounded-lg p-4 ${toggle ? "block" : "hidden"}`}>
+            <a href="https://it.mybespokestaff.com/" className='hover:text-brandBlue'>MyBespokeStaff IT Support</a>
+            <a href="https://odoo.mybespokestaff.com/web/login" className='hover:text-brandBlue'>BES System Login</a>
             <a href="/contactus" className='hover:text-brandBlue'>Contact Us</a>
         </motion.div>
     </div>
