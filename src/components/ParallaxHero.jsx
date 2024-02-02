@@ -6,10 +6,9 @@ import lineseperator from '../assets/Icons/lineseperator.png'
 import customer from '../assets/Icons/customersupport.png'
 import dataentry from '../assets/Icons/dataentry.png'
 import frontbackoffice from '../assets/Icons/frontbackoffice.png'
-import video from '../assets/video.mp4'
+import video from '../assets/video_1.mp4'
 import videowebm from '../assets/video.webm'
 import useParallax from '../utils/parallax'
-import woman from '../assets/portrait-smiling.jpg'
 import itsupp from '../assets/Icons/it-4.png'
 
 import { useRef, useState } from 'react'
@@ -29,12 +28,11 @@ const ParallaxHero = () => {
       <div className="flex overflow-hidden text-white font-bold">
         <div className="z-0 parallax" data-speed="0.5">
           <video loop autoPlay muted playsInLine className="object-fit aspect-video w-screen h-full z-0 lg:block hidden">
-            <source src={ videowebm } type="video/webm"/>
             <source src={ video } type="video/mp4"/>
           </video>
         </div>
-        <img src={woman} alt="" className='absolute hidden top-0 object-fit aspect-video w-screen h-full z-50 lg:hidden'/>
-        <div className={`pt-20  md:pt-0 flex flex-row items-center z-10 `}>
+        
+        <div className={`pt-[26rem] sm:pt-20  md:pt-0 flex flex-row items-center z-10 `}>
           <div className='md:absolute -left-0 flex flex-col justify-center pl-12'>
             <motion.h1 
               initial={{ opacity: 0, y: "10vw" }}
