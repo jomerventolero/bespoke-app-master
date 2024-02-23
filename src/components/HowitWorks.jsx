@@ -18,7 +18,7 @@ const HowitWorks = () => {
           description="Outsource to the Philippines and create a dedicated team, without the worry about Office Space, IT, Recruitment, Payroll, and more."
           url="https://www.mybespokestaff.com/howitworks"
         />
-        <motion.div className="flex flex-row justify-between bg-gradient-to-t from-blue-200 to-blue-400 mt-10 mx-40 text-xl font-semibold"
+        <motion.div className="sm:flex flex-row hidden justify-between bg-gradient-to-t from-blue-200 to-blue-400 mt-10 mx-40 text-xl font-semibold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
