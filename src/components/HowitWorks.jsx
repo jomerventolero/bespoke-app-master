@@ -8,6 +8,7 @@ import UnStyledButton from './UnStyledButton'
 import { motion } from 'framer-motion'
 import styles from '../style'
 import { SuperSEO } from 'react-super-seo'
+import { useRef } from 'react'
 
 const HowitWorks = () => {
   return (
@@ -17,7 +18,7 @@ const HowitWorks = () => {
           description="Outsource to the Philippines and create a dedicated team, without the worry about Office Space, IT, Recruitment, Payroll, and more."
           url="https://www.mybespokestaff.com/howitworks"
         />
-        <motion.div className="relative flex flex-col justify center px-10 py-8"
+        <motion.div className="flex flex-row justify-between bg-gradient-to-t from-blue-200 to-blue-400 mt-10 mx-40 text-xl font-semibold"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -26,7 +27,10 @@ const HowitWorks = () => {
             ease: [0, 0.71, 0.2, 1.01]
             }}  
             >
-              <img src={ howitworks } alt="howitworks" className="w-full justify-center self-center"/>
+              <span className="self-center w-1/2 px-8">
+                Outsource to the Philippines and create a dedicated team, without the worry about Office Space, IT, Recruitment, Payroll, and more.
+              </span>
+              <img src={ howitworks } alt="howitworks" className="w-1/4 justify-center self-center"/>
         </motion.div>
         <motion.div className="lg:flex hidden flex-row gap-4 px-8 py-4 justify-center">
             <motion.img src={one} alt="one" className="w-[20%] h-[20%]" 

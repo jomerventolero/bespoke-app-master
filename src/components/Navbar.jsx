@@ -1,5 +1,4 @@
 import logo from '../assets/logo.png'
-import ContactUs from '../components/ContactUs'
 import styles from '../style'
 
 import { useState } from 'react'

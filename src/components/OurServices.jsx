@@ -2,6 +2,7 @@ import React from 'react'
 import outsource from '../assets/outsource.png'
 import services from '../assets/services.png'
 import styles from '../style'
+import { motion } from 'framer-motion'
 
 const OurServices = () => {
   return (
@@ -31,7 +32,13 @@ const OurServices = () => {
                     
                 </div>
                 <div className="flex flex-col justify-items-start pl-8 pr-[15%]">
-                    <img src={ services } alt="services" className="w-[2000px] h-[530px] md:block hidden"/>
+                    <motion.img 
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 1.0, delay: 0.5 }}
+                        viewport={{ once: true }}
+                        src={ services } alt="services" className="w-[2000px] h-[530px] md:block hidden"
+                    />
                 </div>
             </div>
             <div className="px-[15%]">

@@ -35,13 +35,13 @@ const Testimonials = () => {
                     duration: 1.0,
                     ease: [0, 0.71, 0.2, 1.01]
                 }}
-                className="flex flex-col pt-12 px-2 self-center md:pl-5 pb-5">
-                <h1 className="font-poppins font-bold text-blue-600 text-2xl px-2 pb-5">Data Security</h1>
-                <span className={`my-10 text-md md:text-xl mx-2 font-poppins font-medium text-justify place-self-center align-middle text-brandBlack self-center`}>
+                className="flex flex-col sm:pt-12 px-2 py-4 self-center md:pl-5 sm:pb-5">
+                <h1 className="font-poppins font-bold text-blue-600 text-2xl px-2 sm:pb-5">Data Security</h1>
+                <span className={`sm:my-10 my-4 text-md md:text-xl mx-2 font-poppins font-medium text-justify place-self-center align-middle text-brandBlack self-center`}>
                     With the constant advancements in technology, you can be sure the data we process for you is secured in our in-house dedicated server under lock and key with 24 hours surveillance monitoring.
                     Our stringent measures that we have set in stone on all our Bespoke staff are implemented to the highest standard to prevent any data leak as we fully understand these sensitive data are proprietary to our customers only.
                 </span>
-                <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white rounded-full p-4 transition-all ease-in-out duration-300 hover:bg-brandBlack font-semibold font-poppins" redirect="datasecurity" />
+                <UnStyledButton text="Find out more" buttonStyle="bg-brandBlue text-white text-md sm:text-xl rounded-full py-2 px-2 transition-all ease-in-out duration-300 hover:bg-brandBlack font-semibold font-poppins" redirect="datasecurity" />
             </motion.div>
             <div className='flex items-center justify-center'>
                 <img src={datasecurity} alt="securityicon" className='lg:block hidden  h-[100%] items-center'/>
