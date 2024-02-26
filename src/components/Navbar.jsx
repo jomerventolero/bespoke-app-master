@@ -49,13 +49,7 @@ const Navbar = () => {
           <a href="/contactus" className="text-brandBlack hover:text-brandBlue font-poppins font-semibold pr-8 text-right align-center">Contact Us</a>
           <Hamburger toggled={ toggle } toggle={ openMobileMenu } />
           <motion.div 
-            initial={{ opacity: 0, y: -100}}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{
-                type: "fade",
-                duration: 0.8,
-                delay: 0.5
-            }}
+            
             className={`${toggle ? 'block' : 'hidden'} fixed inset-0 bg-white z-50`}>
             <div className="absolute top-4 right-4">
               <button className="text-brandBlack hover:text-brandBlue" onClick={closeMobileMenu}>Exit</button>
