@@ -43,7 +43,6 @@ const Navbar = () => {
 
         <div className="absolute right-10 pt-6 pr-4 pb-4 lg:block hidden">
             <SubMenu />
-            
         </div>
 
         <div className='md:hidden flex flex-1 justify-end items-center '>
@@ -51,9 +50,9 @@ const Navbar = () => {
           <Hamburger toggled={ toggle } toggle={ openMobileMenu } />
           <motion.div 
             initial={{ opacity: 0, y: -100}}
-            animate={{ opacity: 1, y: 0 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{
-                type: "fadeIn",
+                type: "fade",
                 duration: 0.8,
                 delay: 0.5
             }}

@@ -11,13 +11,11 @@ import useParallax from '../utils/parallax'
 import itsupp from '../assets/Icons/it-4.png'
 import office from '../assets/office.jpg'
 
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 
 const ParallaxHero = () => {
-  const ref = useRef()
-
   useState(() => {
     useParallax();
   }, []);
@@ -27,7 +25,7 @@ const ParallaxHero = () => {
     <div className="flex flex-col justify-center items-center w-screen overflow-hidden">
       <div className="flex overflow-hidden text-white font-bold">
         <div className="z-0 parallax" data-speed="0.5">
-          <video loop autoPlay muted playsInLine className="object-fit aspect-video w-screen h-full z-0 lg:block hidden">
+          <video loop autoPlay muted className="object-fit aspect-video w-screen h-full z-0 lg:block hidden">
             <source src={ video } type="video/mp4"/>
           </video>
         </div>
@@ -61,10 +59,10 @@ const ParallaxHero = () => {
               WE TAKE THE {" "}<br className="sm:block hidden"/><br/>
               <span className="text-brandBlue text-gradient">COMPLICATED</span> {" "} OUT OF <br />
               YOUR OUTSOURCING <br/>NEEDS!
-            </motion.h1>
-      </div>
+        </motion.h1>
+         </div>
 
-      <div ref={ref} className=' px-[10%] md:block hidden'>
+      <div className=' px-[10%] md:block hidden'>
         <div className='w-full h-full p-8 gap-10 content-around flex flex-row'>
           <CustomButton name="My Bespoke Staff Marketing" tpx="40" icon={marketing} seperator={lineseperator} redirect="contactus"/>
           <CustomButton name="My Bespoke Staff Accounting" tpx="40" icon={accounting} seperator={lineseperator} redirect="contactus"/>

@@ -18,7 +18,7 @@ const Card = ({ image1, text }) => {
         <motion.img src={image1}className="h-[35%] w-[75%] self-center aspect-square"
         whileHover={{ scale: 1.05 }}
         />
-        <span className={`text-center px-6 py-8 leading-relaxed  ${styles.textResH3}
+        <span className={`text-center px-6 py-8 leading-relaxed  text-xs sm:text-lg font-poppins font-medium text-brandBlack
         `}>{text}</span> 
     </motion.div>
   )

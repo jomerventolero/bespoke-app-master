@@ -2,7 +2,7 @@
 import Loader from './components/Loader'
 import React from 'react'
 
-import { lazy } from 'react'
+import { lazy } from 'react' 
 import { Suspense } from 'react'
 import { motion, useScroll } from 'framer-motion'
 

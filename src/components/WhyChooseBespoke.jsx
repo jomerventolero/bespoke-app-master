@@ -25,8 +25,8 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={middlemen} alt="middlemen" draggable="false" className="hidden md:block rounded-xl shadow-2xl drop-shadow-2xl"/>
-          <img src={middlemen} alt="middlemen" draggable="false" className="block md:hidden rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img loading="lazy" src={middlemen} alt="middlemen" draggable="false" className="hidden md:block rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img loading="lazy" src={middlemen} alt="middlemen" draggable="false" className="block md:hidden rounded-xl shadow-2xl drop-shadow-2xl"/>
         </motion.div>
         <motion.div
           className="flex flex-col justify-center"
@@ -56,7 +56,7 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={speaking} alt="image" draggable="false" className="block md:hidden rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img loading="lazy" src={speaking} alt="image" draggable="false" className="block md:hidden rounded-xl shadow-2xl drop-shadow-2xl"/>
           <span
             className={`font-poppins font-medium md:text-2xl pt-4 md:pt-0 text-center text-brandBlack`}
           >
@@ -73,7 +73,7 @@ const WhyChooseBespoke = () => {
           }}
           viewport={{ once: true }}
         >
-          <img src={speaking} alt="image" draggable="false" className="hidden md:block rounded-xl shadow-2xl drop-shadow-2xl"/>
+          <img loading="lazy" src={speaking} alt="image" draggable="false" className="hidden md:block rounded-xl shadow-2xl drop-shadow-2xl"/>
           
         </motion.div>
         <motion.div
